@@ -1,0 +1,271 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Pricing box style 01
+ *		Responsive
+ */ 
+
+
+/*----------  1. General  ----------*/
+	.slz-pricing-table-01 {
+        background-color: #fff;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+        border: 1px solid #ddd;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .slz-pricing-table-01 .pricing-label {
+        position: absolute;
+        padding: 8px 16px;
+        color: #fff;
+        background-color: #db0f31;
+        top: 0;
+        right: 0;
+        -webkit-transform: rotate(90deg) translate(100%, 0);
+        -ms-transform: rotate(90deg) translate(100%, 0);
+        transform: rotate(90deg) translate(100%, 0);
+        -ms-transform-origin: right top;
+        transform-origin: right top;
+        -webkit-transform-origin: right top;
+    }
+
+    .slz-pricing-table-01 .pricing-header {
+        margin-bottom: 30px;
+    }
+
+    .slz-pricing-table-01 .pricing-header .title {
+        font-weight: 700;
+        font-size: 30px;
+        color: #213047;
+        margin-bottom: 30px;
+    }
+
+    .slz-pricing-table-01 .pricing-section {
+        font-size: 30px;
+        font-weight: 700;
+        color: #666c72;
+    }
+
+    .slz-pricing-table-01 .pricing-section .unit {
+        top: 0;
+        vertical-align: top;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .slz-pricing-table-01 .pricing-section .per {
+        font-size: 60%;
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    .slz-pricing-table-01 .pricing-section .sub-title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .slz-pricing-table-01 .pricing-body .pricing-option {
+        color: #666c72;
+        margin-bottom: 10px;
+    }
+
+    .slz-pricing-table-01 .pricing-footer {
+        margin-top: 30px;
+    }
+
+    .slz-pricing-table-01 .pricing-footer .btn {
+        width: 180px;
+        border: none;
+        color: #fff;
+        background-color: #337ab7;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+
+    .slz-pricing-table-01.active,
+    .slz-pricing-table-01:hover {
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+/*----------  2. SC Pricing box style 01  ----------*/
+	.slz-pricing-plan-01 .slz-list-block {
+		margin: 0;
+	}
+	.slz-pricing-plan-01.has_shadow .slz-pricing-table-01 {
+		-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
+	}
+	.slz-pricing-table-01 {
+		padding: 0;
+		border: 0;
+		padding-bottom: 30px;
+		position: relative;
+		z-index: 0;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+	}
+	.slz-pricing-table-01:before {
+	    content: "";
+	    position: absolute;
+	    z-index: -1;
+	    left: 50%;
+	    right: 50%;
+	    bottom: 0;
+	    background-color: #cf4a46;
+	    height: 2px;
+	    -webkit-transition-property: left, right;
+	    transition-property: left, right;
+	    -webkit-transition-duration: 0.6s;
+	    transition-duration: 0.6s;
+	    -webkit-transition-timing-function: ease-out;
+	    transition-timing-function: ease-out;
+	}
+	.slz-pricing-plan-01.has_shadow .slz-pricing-table-01:hover,
+	.slz-pricing-table-01:hover {
+		-webkit-box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.08);
+		box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.08);
+	}
+	.slz-pricing-table-01:hover:before {
+		left: 0;
+		right: 0;
+	}
+	.slz-pricing-table-01 .pricing-header {
+		margin-bottom: 25px;
+		padding: 30px 20px;
+		display:block;
+		width: 100%;
+		text-align: center;
+	}
+	.pricing-box-total-1 .pricing-header {
+		background-color: #29333a;
+	}
+	.pricing-box-total-2 .pricing-header {
+		background-color: #a73d3a;
+	}
+	.pricing-box-total-3 .pricing-header {
+		background-color: #cf4a46;
+	}
+	.pricing-box-total-4 .pricing-header {
+		background-color: #dd6043;
+	}
+
+	.slz-pricing-table-01 .pricing-header .title {
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		color: #ffffff;
+		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.slz-pricing-table-01 .pricing-header .sub-title {
+		// display: table-row;
+		font-size: 16px;
+		font-weight: 500;
+		color: #ffffff;
+	}
+
+	.slz-pricing-table-01 .pricing-body .pricing-option {
+		margin-bottom: 8px;
+		color: #777777;
+		font-family: 'Poppins', sans-serif; 
+		font-size: 14px;
+	}
+	.slz-pricing-table-01 .pricing-section {
+		padding: 25px 15px;
+		border-top: 1px solid #f2f2f2;
+		border-bottom: 1px solid #f2f2f2;
+		margin-top: 25px;
+		font-size: 48px;
+		color: #cf4a46;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		line-height: 1;
+	}
+	.slz-pricing-table-01 .pricing-section .unit {
+		font-size: 28px;
+		top: 0px;
+		left: 0px;
+		line-height: 1;
+		font-weight: 600;
+	}
+	.slz-pricing-table-01 .pricing-section .per {
+		font-family: 'Crimson Text', serif;
+		font-size: 18px;
+		text-transform: lowercase;
+		font-style: italic;
+	}
+
+	.slz-pricing-table-01 .pricing-footer {
+		margin-top: 0;
+	}
+	.slz-pricing-table-01 .pricing-footer .btn {
+	    background-color: #ffffff;
+	    border: 2px solid #dddddd;
+	    border-radius: 2px;
+	    color: #333333;
+	    font-weight: 600;
+	    font-family: 'Poppins', sans-serif;
+	    margin-top: 25px;
+	    text-transform: uppercase;
+	    padding: 15px 6px;
+	    width: 190px;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+	    z-index: 0;
+	    position: relative;
+	}
+	.slz-pricing-table-01 .pricing-footer .btn:hover {
+		border: 2px solid #cf4a46;
+		color: #ffffff;
+		background-color: #cf4a46;
+	}
+	/* 	// .slz-pricing-table-01 .pricing-footer .btn:before {
+		//     content: "";
+		//     position: absolute;
+		//     z-index: -1;
+		//     top: -2px;
+		//     bottom: -2px;
+		//     left: -2px;
+		//     right: -2px;
+		//     border-radius: 2px;
+		//     background-color: #cf4a46;
+		//     -webkit-transform: scaleX(0);
+		//     transform: scaleX(0);
+		//     -webkit-transform-origin: 50%;
+		//     transform-origin: 50%;
+		//     -webkit-transition-property: transform;
+		//     transition-property: transform;
+		//     -webkit-transition-duration: 0.3s;
+		//     transition-duration: 0.3s;
+		//     -webkit-transition-timing-function: ease-out;
+		//     transition-timing-function: ease-out;
+		// }
+		// .slz-pricing-table-01:hover .pricing-footer .btn {
+		// 	color: #ffffff;
+		// }
+		// .slz-pricing-table-01:hover .pricing-footer .btn:before {
+		// 	-webkit-transform: scaleX(1);
+		//     transform: scaleX(1);
+		//     color: #ffffff;	
+		// } */
+
+
+/*----------  Responsive  ----------*/
+
+

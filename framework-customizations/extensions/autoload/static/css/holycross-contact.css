@@ -1,0 +1,280 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Contact form
+ *		3. SC Contact
+ *		Responsive
+ */ 
+
+
+/*----------  SC Contact form  ----------*/
+ 
+	.slz-contact-form .cf7-holycross {
+		display: table;
+		width: 100%;
+		padding: 60px 70px;
+		background-color: #ffffff;
+		font-size: 14px;
+	}
+	.slz-contact-form .cf7-holycross .cf7-input-50 {
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 50%;
+		float: left;
+	}
+	.slz-contact-form .cf7-holycross .slz-left-contact {
+		padding-left: 0;
+	}
+	.slz-contact-form .cf7-holycross .slz-right-contact {
+		padding-right: 0;
+	}
+
+	.slz-contact-form .cf7-holycross .slz-btn-submit {
+		display: block;
+		position: relative;
+		text-align: center;
+		float: left;
+		width: 100%;
+	}
+	.slz-contact-form .cf7-holycross .slz-btn-submit .slz-btn {
+		font-size: 14px;
+		line-height: 1;
+		height: 50px;
+	}
+
+	.slz-contact-form .cf7-holycross .cf7-form-control .form-control {
+		height: 50px;
+		box-shadow: none;
+		border: 2px solid #ededed;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.8;
+		padding: 10px 20px;
+	}
+
+	.slz-contact-form .cf7-holycross .cf7-form-control .form-control.wpcf7-not-valid {
+		border: 2px solid #F44336;
+	}
+	.slz-contact-form .cf7-holycross .cf7-form-control span.wpcf7-not-valid-tip {
+		color: #F44336;
+		position: absolute;
+		bottom: 0;
+		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+	}
+
+	.slz-contact-form .cf7-holycross .slz-right-contact .form-control {
+		height: 163px;
+	}
+
+	.slz-contact-form .cf7-holycross .cf7-form-control {
+		margin-bottom: 30px;
+		padding: 0;
+		width: 100%;
+	}
+	.slz-contact-form .cf7-holycross .slz-right-contact .cf7-form-control {
+		margin-bottom: 0;
+	}
+	.slz-contact-form .cf7-holycross .cf7-form-control label{
+		font-size: 16px;
+		line-height: 1.4;
+		font-weight: 600;
+		color: #333333;
+		margin-bottom: 15px;
+		line-height: 1;
+		height: 15px;
+		text-transform: capitalize;
+		font-family: 'Poppins', sans-serif;
+	}
+	.slz-contact-form .cf7-holycross .cf7-form-control span {
+		display: block;
+		width: 100%;
+	}
+
+	.slz-contact-form .cf7-form-control .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #777777;
+		font-weight: 500;
+	}
+	.slz-contact-form .cf7-form-control .form-control::-moz-placeholder { /* Firefox 19+ */
+		color: #777777;
+		font-weight: 500;
+	}
+	.slz-contact-form .cf7-form-control .form-control:-ms-input-placeholder { /* IE 10+ */
+		color: #777777;
+		font-weight: 500;
+	}
+	.slz-contact-form .cf7-form-control .form-control:-moz-placeholder { /* Firefox 18- */
+		color: #777777;
+		font-weight: 500;
+	}
+
+	.slz-contact-form .cf7-holycross-1 {
+		display: table;
+		position: relative;
+	}
+	.slz-contact-form .cf7-holycross-1 .cf7-input-50 {
+		position: relative;
+		display: table-cell;
+		width: calc(100% - 180px);
+		padding: 0;
+		margin-bottom: -30px;
+	}
+	.slz-contact-form .cf7-holycross-1 .cf7-form-control {
+		padding-right: 30px;
+		width: 50%;
+		float: left;
+	}
+	.slz-contact-form .cf7-holycross-1 .slz-btn-submit {
+		display: table-cell;
+		width: 180px;
+		max-width: 180px;
+		margin-top: 32px;
+	}
+
+	.slz-contact-form .cf7-holycross .slz-btn-submit .ajax-loader {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(100%,-50%);
+		-webkit-transform: translate(100%,-50%);
+	}
+	div.wpcf7-validation-errors{
+		border-color:  #F44336;
+		color: #ffffff;
+		font-size: 16px;
+	}
+	div.wpcf7-response-output{
+		padding: 10px 20px;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+	}
+	.wpcf7-validation-errors{
+		background-color:  #F44336;
+	}
+/*----------  SC Contact  ----------*/
+	
+	.sc_contact .slz-list-block {
+		transform: none;
+		-webkit-transform: none;
+	}
+	.slz-contact-01 {
+		text-align: left;
+		padding: 0;
+	}
+	.slz-contact-01 .contact-title .slz-icon {
+		padding: 0;
+	}
+	.slz-contact-01 .contact-title.main-item .contact-item {
+		margin-bottom: 15px;
+	}
+
+	.slz-contact-01 .contact-title {
+		font-size: 16px;
+		color: #333333;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+
+	.slz-contact-01 .contact-content {
+		padding-top: 0px;
+		color: #555555;
+		font-weight: 400;
+		opacity: 1;
+	}
+	.slz-contact-01 .contact-content .contact-item {
+		position: relative;
+	}
+	.slz-contact-01 .contact-content .slz-icon {
+	    padding-right: 0px;
+	    font-size: 16px;
+	    min-width: 35px;
+	    color: #cf4a46;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    line-height: 27px;
+	}
+
+	.slz-contact-01 .contact-content .text {
+		vertical-align: top;
+		padding-left: 35px;
+	}
+
+	.slz-contact-01 .contact-content.sub-item div + div {
+		margin-top: 6px;
+	}
+
+/*----------  RESPONSIVE  ----------*/
+
+@media screen and (max-width:1024px) {
+	
+}
+
+@media screen and (max-width:768px) {
+	.slz-contact-form .cf7-holycross {
+		padding: 30px;
+	}
+	.slz-list-block.slz-list-contact-01.slz-column-2 > .item {
+		width: 100%;
+	}
+	.slz-list-block.slz-list-contact-01.slz-column-2 > .item + .item {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.slz-contact-form .cf7-holycross-1 .cf7-input-50 {
+		width: 100%;
+	}
+	.slz-contact-form .cf7-holycross-1 .cf7-form-control {
+		padding-right: 15px;
+		margin-bottom: 0;
+	}
+	.slz-contact-form .cf7-holycross-1 .cf7-form-control:last-child {
+		padding-right: 0;
+		padding-left: 15px;
+	}
+	.slz-contact-form .cf7-holycross-1 .slz-btn-submit {
+	    width: 100%;
+	    max-width: 100%;
+	    margin-top: 30px;
+	}
+}
+
+@media screen and  (max-width:600px) {
+	.slz-contact-form .cf7-holycross .cf7-input-50,
+	.slz-contact-form .cf7-holycross-1 .cf7-form-control {
+		width: 100%;
+		padding-right: 0;
+	}
+	.slz-contact-form .cf7-holycross .slz-right-contact {
+		padding-left: 0;
+	}
+	.slz-contact-form .cf7-holycross .slz-btn-submit {
+		margin-top: 30px;
+	}
+
+	.slz-contact-form .cf7-holycross-1 .cf7-form-control:last-child {
+		padding-left: 0;
+		margin-top: 30px;
+	}
+	.slz-contact-form .cf7-holycross .slz-btn-submit {
+	    text-align: left;
+	}
+	.slz-contact-form .cf7-holycross-1 .cf7-input-50 {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	
+}

@@ -1,0 +1,1237 @@
+/*
+*  STYLE DEFAULT TEAM
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*   1.0 Variable
+*       1.1 List Layout
+*       1.2 Team Block
+*       1.3 Team Image
+*       1.4 Team Content
+*   2.0 Layout United States   
+*       2.1 Style Florida
+*       2.2 Style California
+*       2.3 Style Georgia
+*       2.4 Style Newyork
+*   3.0 Layout Idia
+*       3.1 Style Chennai
+*       3.2 Style Mumbai
+*       3.3 Style Pune
+*   4.0 Layout United Kingdom
+*       4.1 Style London
+*   5.0 Layout Italy
+*   I.0 Carousel
+*       I.1 Style United State
+*       I.2 Style United Kingdom 
+*   RESPONSIVE
+*   SOCIAL COLOR
+*
+*
+*
+*
+*
+*/
+
+/*====================================
+=            1.0 Variable            =
+====================================*/
+    
+    /*----------  1.1 List Layout  -----------*/
+        
+        .slz-list-team-block {
+            font-size: 0;
+            margin: 0 -15px;
+        }
+
+        .slz-list-team-block > .item {
+            font-size: 14px;
+            padding: 0 15px;
+            margin-top: 30px;
+            vertical-align: top;
+            display: inline-block;
+        }
+        
+        .slz-list-team-block.slz-column-1 > .item {
+            width: 100%;
+        }
+
+        .slz-list-team-block.slz-column-1 > .item:first-child {
+            margin-top: 0;
+        }
+
+        .slz-list-team-block.slz-column-2 > .item {
+            width: 50%;
+        }
+
+        .slz-list-team-block.slz-column-2 > .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+
+        .slz-list-team-block.slz-column-3 > .item {
+            width: 33.3%;
+        }
+
+        .slz-list-team-block.slz-column-3 > .item:nth-child(3n) {
+            width: 33.4%;
+        }
+
+        .slz-list-team-block.slz-column-3 > .item:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+
+        .slz-list-team-block.slz-column-4 > .item {
+            width: 25%;
+        }
+
+        .slz-list-team-block.slz-column-4 > .item:nth-child(-n + 4) {
+            margin-top: 0;
+        }
+    
+    /*----------  1.2 Team Block  ------------*/
+        .slz-team-block {
+            position: relative;
+            text-align: center;
+            transition: all .3s ease;
+            -o-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+        }
+        
+    /*----------  1.3 Team Image  -------------*/
+        .slz-team-block .team-image {
+            display: block;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        .slz-team-block .team-image:before {
+            display: block;
+            content: '';
+            padding-top: 100%;
+        }
+
+        .slz-team-block .team-image .link {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            overflow: hidden;
+            position: absolute;
+            border-radius: inherit;
+        }
+
+        .slz-team-block .team-image img {
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: 100%;
+            max-width: none;
+            position: absolute;
+            -webkit-transform: translate3D(-50%, -50%, 0);
+            -moz-transform: translate3D(-50%, -50%, 0);
+            -ms-transform: translate3D(-50%, -50%, 0);
+            -o-transform: translate3D(-50%, -50%, 0);
+            transform: translate3D(-50%, -50%, 0);
+        }
+
+        .slz-team-block.image-square .team-image {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        .slz-team-block.image-circle .team-image {
+            max-width: 180px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            background-color: #eaeaea;
+        }
+
+        .slz-team-block.image-circle .team-image:hover {
+             box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+                
+    /*----------  1.4 Team Content  ----------*/
+        .slz-team-block .team-content {
+            position: relative;
+            padding: 20px 0 0 0;
+        }
+
+        .slz-team-block .name {
+            color: #333;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .slz-team-block a.name:hover {
+            color: #da0f32;
+        }
+
+        .slz-team-block .position {
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .slz-team-block .description {
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .slz-team-block .slz-btn-readmore {
+            display: block;
+            font-weight: 600;
+            margin-top: 10px;
+            text-transform: capitalize;
+        }
+
+        .slz-team-block .slz-btn-readmore .slz-icon {
+            color: inherit;
+            margin-left: 5px;
+            font-size: inherit;
+            vertical-align: middle;
+        }
+
+        .slz-team-block .slz-btn-readmore .slz-icon:before {
+            content: "\f105";
+        }
+
+        .slz-team-block .slz-info-block .info-item:before,
+        .slz-team-block .slz-info-block .info-item:before  {
+            color: inherit;
+            font-size: inherit;
+            margin-right: 10px;
+            font-family: 'FontAwesome';
+        }
+
+        .slz-team-block .slz-info-block .mobile:before {
+            content: "\f095";
+        }
+
+        .slz-team-block .slz-info-block .email:before {
+            content: "\f0e0";
+        }
+
+        .slz-team-block .social-list {
+            margin-top: 10px;
+        }
+
+        .slz-team-block .social-list > .social-item {
+            color: #fff;
+            margin: 5px;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            position: relative;
+            vertical-align: top;
+            display: inline-block;
+            background-color: #bdbdbd;
+            transform: translateZ(0);
+        }
+
+        .slz-team-block .social-list > .social-item .text {
+            top: 0;
+            left: 50%;
+            opacity: 0;
+            padding: 0 8px;
+            font-size: 12px;
+            line-height: 21px;
+            border: none;
+            pointer-events: none;
+            display: block;
+            color: inherit;
+            position: absolute;
+            visibility: hidden;
+            white-space: nowrap;
+            background-color: inherit;
+            transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .slz-team-block .social-list > .social-item .text:before {
+            top: calc(100% - 1px);
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            content: '';
+            z-index: -1;
+            position: absolute;
+            background-color: inherit;
+            transform: translate(-50%, -51%) rotate(45deg);
+            -o-transform: translate(-50%, -51%) rotate(45deg);
+            -webkit-transform: translate(-50%, -51%) rotate(45deg);
+            transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        .slz-team-block .social-list > .social-item:hover .text {
+            top: calc(-100% + 1px);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .slz-team-block.image-circle .social-list > .social-item {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+/*=====  End of 1.0 Variable  ======*/
+
+
+/*================================================
+=            2.0 Layout United States            =
+================================================*/
+
+    /*----------  2.1 Style Florida  -----------*/
+
+    /*----------  2.2 Style California  --------*/
+
+    /*----------  2.3 Style Georgia  -----------*/
+
+    /*----------  2.4 Style Newyork  -----------*/
+
+        .slz-team-block.st-newyork {
+            padding: 15px;
+            text-align: left;
+            background-color: #f5f5f5;
+        }
+
+        .slz-team-block.st-newyork .team-content {
+            padding-top: 15px;
+        }
+
+        .slz-team-block.st-newyork .name {
+            font-size: 18px;
+        }
+
+        .slz-team-block.st-newyork .description,
+        .slz-team-block.st-newyork .social-list {
+            padding-top: 10px;
+        }
+
+
+        .slz-team-block.st-newyork .description ~ .social-list {
+            padding-top: 0;
+        }
+
+        .slz-team-block.st-newyork .description ~ .social-list:before {
+            content: none;
+        }
+
+        .slz-team-block.st-newyork .description:before,
+        .slz-team-block.st-newyork .social-list:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            height: 2px;
+            width: 50px;
+            background-color: #666c72;
+        }
+
+        .slz-team-block.st-newyork .social-list {
+            margin-left: -5px;
+            margin-right: -5px;
+            position: relative;
+        }
+
+        .slz-team-block.st-newyork .social-list:before {
+            left: 5px;
+        }
+
+        .slz-team-block.st-newyork .social-list > .social-item {
+            background-color: transparent;
+            color: #969696;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-size: 15px;
+            padding: 0 6px;
+        }
+
+        .slz-team-block.st-newyork .social-list > .social-item:first-child {
+            margin-left: 0;
+        }
+
+        .slz-team-block.st-newyork .social-list > .social-item .text {
+            display: none;
+        }
+    
+/*=====  End of 2.0 Layout United States  ======*/
+
+
+/*===============================================
+=            3.0 Layout Idia                    =
+===============================================*/
+
+    /*----------  3.1 Style Chennai  ----------*/
+        .sc_team_block.la-india .slz-team-block {
+            overflow: hidden;
+            color: #fafafa;
+            background-color: #eaeaea;
+        }
+
+        .sc_team_block.la-india .slz-team-block:before {
+            content: "";
+            display: block;
+            padding-top: 110%;
+        }
+
+        .sc_team_block.la-india .slz-team-block .name,
+        .sc_team_block.la-india .slz-team-block .position {
+            letter-spacing: 1px;
+        }
+
+        .sc_team_block.la-india .slz-team-block .position {
+        }
+
+        .sc_team_block.la-india .slz-team-block .name,
+        .sc_team_block.la-india .slz-team-block .slz-info-block a,
+        .sc_team_block.la-india .slz-team-block .slz-btn-readmore {
+            color: #fafafa;
+        }
+
+        .sc_team_block.la-india .slz-team-block .name:hover,
+        .sc_team_block.la-india .slz-team-block .slz-btn-readmore:hover {
+            color: #da0f32;
+        }
+
+        .sc_team_block.la-india .slz-team-block .team-image {
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .sc_team_block.la-india .slz-team-block .team-image:before {
+            content: none;
+        }
+
+        .sc_team_block.la-india .slz-team-block .team-content {
+            left: 0;
+            top: -100%;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            padding-top: 0;
+            position: absolute;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .sc_team_block.la-india .slz-team-block .description {
+            max-height: 72px;
+        }
+
+        .sc_team_block.la-india .slz-team-block .content-wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 20px 15px 20px 20px;
+            display: table;
+        }
+
+        .sc_team_block.la-india .mCSB_inside>.mCSB_container {
+            margin-right: 15px;
+        }
+
+         .sc_team_block.la-india .mCSB_scrollTools .mCSB_draggerContainer {
+            right: -10px;
+        }
+
+        .sc_team_block.la-india .slz-team-block .main-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item {
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-size: 15px;
+            padding: 0 6px;
+        }
+
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item .text {
+            display: none;
+        }
+
+        .slz-team-block.st-chennai .description,
+        .slz-team-block.st-chennai .social-list {
+            position: relative;
+            padding-top: 15px;
+        }
+
+        .sc_team_block.la-india .slz-team-block.st-chennai .description {
+            max-height: 85px;
+        }
+
+        .slz-team-block.st-chennai .description ~ .social-list {
+            padding-top: 0;
+        }
+
+        .slz-team-block.st-chennai .description ~ .social-list:before {
+            content: none;
+        }
+
+        .slz-team-block.st-chennai .description:before,
+        .slz-team-block.st-chennai .social-list:before {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            content: "";
+            height: 2px;
+            width: 50px;
+            background-color: #fff;
+            transform: translateX(-50%);
+        }
+
+
+
+    /*----------  3.2 Style Mumbai  -----------*/
+        .slz-team-block.st-mumbai .bot-content {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 15px 20px;
+        }
+
+        .slz-team-block.st-mumbai .bot-content .social-list{
+            margin-top: 0;
+        }
+
+    /*----------  3.3 Style Pune  -------------*/
+        .slz-team-block.st-pune {
+            text-align: left;
+        }
+
+        .slz-team-block.st-pune .description,
+        .slz-team-block.st-pune .social-list {
+            position: relative;
+            padding-top: 15px;
+        }
+
+        .sc_team_block.la-india .slz-team-block.st-pune .description {
+            max-height: 85px;
+        }
+
+        .slz-team-block.st-pune .description ~ .social-list {
+            padding-top: 0;
+        }
+
+        .slz-team-block.st-pune .description ~ .social-list:before {
+            content: none;
+        }
+
+        .slz-team-block.st-pune .description:before,
+        .slz-team-block.st-pune .social-list:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            height: 2px;
+            width: 50px;
+            background-color: #fff;
+        }
+        .slz-team-block.st-pune .social-list {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+/*=====  End of 3.0 Layout Idia  ==============*/
+
+
+/*===============================================
+=            4.0 Layout United Kingdom          =
+===============================================*/
+
+    /*----------  4.1 Style London  -----------*/
+        .slz-team-block.st-london {
+            text-align: left;
+        }
+
+        .slz-team-block.st-london .team-image-wrapper {
+            overflow: hidden;
+            position: relative;
+            background-color: #eaeaea;
+        }
+
+        .slz-team-block.st-london .social-list {
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            width: 100%;
+            margin-top: 0;
+            padding: 10px 15px;
+            text-align: center;
+            position: absolute;
+            transform: translateY(100%);
+            transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .slz-team-block.st-london:hover .social-list {
+            transform: translateY(0);
+        }
+
+        .slz-team-block.st-london .social-list > .social-item {
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-size: 15px;
+            padding: 0 6px;
+        }
+
+        .slz-team-block.st-london .team-content {
+            padding-top: 15px;
+        }
+
+        .slz-team-block.st-london .social-list > .social-item .text {
+            display: none;
+        }
+
+/*=====  End of 4.0 Layout United Kingdom  ====*/
+
+
+/*===============================================
+=            5.0 Layout Italy                   =
+===============================================*/
+
+/*=====  End of 5.0 Layout Italy  =============*/
+
+
+
+/*===============================================
+=            I.0 Carousel                       =
+===============================================*/
+    
+    /*----------  I.1 Style United State  -----*/
+    
+        
+        .sc_team_carousel.la-united-states .slider-nav {
+            position: absolute;
+            bottom: 15px;
+            width: calc(100% - 460px);
+            left: 435px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .slz-team-block {
+            background-color: #ddd;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .name {
+            font-size: 24px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right{
+            width: calc(100% - 400px);
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 30px;
+            padding-top: 15px;
+            text-align: left;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-left {
+            width: 400px;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding: 15px 0;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .team-image {
+             -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .team-image {
+            position: relative;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .team-image  {
+            opacity: 0.5;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .slick-current .team-image  {
+            opacity: 1;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .item {
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .team-content {
+            padding: 0;
+        }
+
+        .sc_team_carousel.la-united-states .slz-team-block .social-list > .social-item:first-child {
+         margin-left: 0;
+         }
+
+        .sc_team_carousel.la-united-states .slz-team-block .social-list > .social-item:last-child {
+            margin-right: 0;
+        }
+
+    /*----------  I.2 Style United Kingdom  ---*/
+
+        .sc_team_carousel.la-united-kingdom {
+            position: relative;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block {
+            background-color: #ddd;
+        }
+        .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center .slz-team-block {
+            background-color: transparent;
+        } 
+
+        .sc_team_carousel.la-united-kingdom .slider-for {
+                max-width: 300px;
+                position: relative;
+                z-index: 2;
+                margin: 0 auto;
+
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-for .slz-team-block {
+            background-color: #fff;
+            -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-team-block .team-content {
+            padding: 20px 15px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .team-content {
+            padding: 10px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-carousel-wrapper  {
+            margin: 0 -10px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block {
+            opacity: 0.5;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center .slz-team-block {
+            opacity: 1;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .social-list,
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .description,
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .slz-info-block {
+            display: none;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .item {
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-for .item  {
+            padding: 10px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item:hover .text {
+            display: none;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .name {
+            font-size: 14px;
+        }
+
+        .sc_team_carousel.la-united-kingdom  .slider-nav .slz-team-block .position {
+            font-size: 12px;
+        }
+
+
+    
+/*=====  End of I.0 Carousel  =================*/
+
+
+/*===============================================
+=            RESPONSIVE                         =
+===============================================*/
+    @media screen and (max-width: 1024px) {
+        .sc_team_carousel.la-united-states .slider-nav {
+            position: relative;
+            bottom: auto;
+            width: auto;
+            left: auto;
+            padding: 0 5px;
+            margin-top: 15px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-left {
+            width: 40%;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            width: 60%;
+        }
+
+        .sc_team_carousel.la-united-states  .slick-track {
+            margin: 0 -10px;
+        }
+
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slick-track {
+            margin: 0 -10px;
+        }
+
+    }
+    
+     @media screen and (max-width: 768px) {
+        .sc_team_carousel.la-united-states  .slick-track {
+            margin: 0;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slick-track {
+            margin: 0;
+        }
+
+        .sc_team_carousel.la-united-states .slz-carousel-wrapper {
+            margin: 0 -10px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-carousel-wrapper {
+            margin: 0 -5px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slick-track {
+            padding: 15px 0;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-left {
+            width: 50%;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            width: 50%;
+        }
+
+        .slz-team-block.st-london .social-list {
+            transform: translateY(0);
+        }
+
+        .sc_team_carousel.la-united-states .slz-carousel-wrapper {
+            margin: 0 -15px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-carousel-wrapper {
+            margin: 0 -10px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            padding-left: 15px;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav .item,
+        .sc_team_carousel.la-united-states .slider-nav {
+            padding: 0 8px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .sc_team_carousel.la-united-kingdom .slider-nav {
+            position: relative;
+            width: 100%;
+            top: auto;
+            left: auto;
+            z-index: 1;
+            -webkit-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center .slz-team-block {
+            -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center .slz-team-block:before {
+            content: none;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-for {
+            display: none;
+        }
+
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-left {
+            width: 100%;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            width: 100%;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            padding-left: 0;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .social-list,
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .description,
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block .slz-info-block {
+            display: block;
+        }
+
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .col-right {
+            padding-top: 0;
+        }
+
+        .sc_team_carousel.la-united-states .slider-nav {
+            margin-top: 30px;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-carousel-wrapper {
+            margin: 0;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .item {
+            padding: 0 8px 30px 8px;
+        }
+
+
+
+    }
+
+
+
+    @media screen and (max-width: 414px) {
+        .sc_team_carousel.la-united-kingdom .slider-nav .slick-track {
+            margin: 0;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+         .sc_team_carousel.la-united-kingdom .slider-nav  .slick-center .slz-team-block {
+            -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.18);
+        }
+
+        .sc_team_carousel.la-united-kingdom .slider-nav .slz-team-block:before {
+            content: none;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-carousel-wrapper {
+            margin: 0 -10px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .sc_team_carousel.la-united-states .slider-for .slz-team-block .name {
+            font-size: 16px;
+        }
+    }
+
+
+
+/*=====  End of RESPONSIVE  ===================*/
+
+
+/*===============================================
+=            SOCIAL COLOR                       =
+===============================================*/
+    
+    /*----------  Layout United States  -------*/
+        .slz-team-block .social-list > .social-item.facebook {
+            background-color: #365899;
+        }
+        .slz-team-block .social-list > .social-item.twitter {
+            background-color: #1da1f2;
+        }
+        .slz-team-block .social-list > .social-item.google-plus,
+        .slz-team-block .social-list > .social-item.google {
+            background-color: #d73d32;
+        }
+        .slz-team-block .social-list > .social-item.pinterest {
+            background-color: #bd081c;
+        }
+        .slz-team-block .social-list > .social-item.vimeo {
+            background-color: #00adef;
+        }
+        .slz-team-block .social-list > .social-item.skype {
+            background-color: #00aff0;
+        }
+        .slz-team-block .social-list > .social-item.youtube {
+            background-color: #e62117;
+        }
+        .slz-team-block .social-list > .social-item.rss {
+            background-color: #f36f24;
+        }
+        .slz-team-block .social-list > .social-item.delicious {
+            background-color: #2a96ff;
+        }
+        .slz-team-block .social-list > .social-item.flickr {
+            background-color: #ff0084;
+        }
+        .slz-team-block .social-list > .social-item.lastfm {
+            background-color: #b90000;
+        }
+        .slz-team-block .social-list > .social-item.linkedin {
+            background-color: #0077b5;
+        }
+        .slz-team-block .social-list > .social-item.tumblr {
+            background-color: #36465d;
+        }
+        .slz-team-block .social-list > .social-item.deviantart {
+            background-color: #05cc47;
+        }
+        .slz-team-block .social-list > .social-item.git {
+            background-color: #f34f29;
+        }
+        .slz-team-block .social-list > .social-item.instagram {
+            background-color: #895a4d;
+        }
+        .slz-team-block .social-list > .social-item.soundcloud {
+            background-color: #ff5500;
+        }
+        .slz-team-block .social-list > .social-item.stumbleupon {
+            background-color: #eb4924;
+        }
+        .slz-team-block .social-list > .social-item.behance {
+            background-color: #005cff;
+        }
+        .slz-team-block .social-list > .social-item.tripadvisor {
+            background-color: #589442;
+        }
+        .slz-team-block .social-list > .social-item.vk {
+            background-color: #507299;
+        }
+        .slz-team-block .social-list > .social-item.foursquare {
+            background-color: #f94877;
+        }
+        .slz-team-block .social-list > .social-item.xing {
+            background-color: #add000;
+        }
+        .slz-team-block .social-list > .social-item.weibo {
+            background-color: #e6162d;
+        }
+        .slz-team-block .social-list > .social-item.odnoklassniki {
+            background-color: #f58220;
+        }
+        
+        .slz-team-block.st-newyork .social-list > .social-item {
+            background-color: transparent;
+        }
+    
+    /*----------  Layout India  ---------------*/
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item {
+            color: #969696;
+            background-color: transparent;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.facebook:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.facebook:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.facebook:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.facebook:hover {
+            color: #365899;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.twitter:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.twitter:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.twitter:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.twitter:hover {
+            color: #1da1f2;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.google-plus:hover,
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.google:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.google-plus:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.google:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.google-plus:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.google:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.google-plus:hover {
+            color: #d73d32;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.pinterest:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.pinterest:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.pinterest:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.pinterest:hover {
+            color: #bd081c;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.vimeo:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.vimeo:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.vimeo:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.vimeo:hover {
+            color: #00adef;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.skype:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.skype:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.skype:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.skype:hover {
+            color: #00aff0;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.youtube:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.youtube:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.youtube:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.facebook:hover {
+            color: #e62117;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.rss:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.rss:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.rss:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.youtube:hover {
+            color: #f36f24;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.delicious:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.delicious:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.delicious:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.delicious:hover {
+            color: #2a96ff;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.flickr:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.flickr:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.flickr:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.flickr:hover {
+            color: #ff0084;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.lastfm:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.lastfm:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.lastfm:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.lastfm:hover {
+            color: #b90000;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.linkedin:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.linkedin:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.linkedin:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.linkedin:hover {
+            color: #0077b5;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.tumblr:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.tumblr:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.tumblr:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.tumblr:hover {
+            color: #36465d;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.deviantart:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.deviantart:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.deviantart:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.deviantart:hover {
+            color: #05cc47;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.git:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.git:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.git:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.git:hover {
+            color: #f34f29;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.instagram:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.instagram:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.instagram:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.instagram:hover {
+            color: #895a4d;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.soundcloud:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.soundcloud:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.soundcloud:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.soundcloud:hover {
+            color: #ff5500;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.stumbleupon:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.stumbleupon:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.stumbleupon:hover ,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.stumbleupon:hover{
+            color: #eb4924;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.behance:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.behance:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.behance:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.behance:hover {
+            color: #005cff;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.tripadvisor:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.tripadvisor:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.tripadvisor:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.tripadvisor:hover {
+            color: #589442;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.vk:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.vk:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.vk:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.vk:hover {
+            color: #507299;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.foursquare:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.foursquare:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.foursquare:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.foursquare:hover {
+            color: #f94877;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.xing:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.xing:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.xing:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.xing:hover {
+            color: #add000;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.weibo:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.weibo:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.weibo:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.weibo:hover {
+            color: #e6162d;
+        }
+        .sc_team_block.la-united-kingdom .slz-team-block .social-list > .social-item.odnoklassniki:hover,
+        .sc_team_block.la-india .slz-team-block .social-list > .social-item.odnoklassniki:hover,
+        .slz-team-block.st-newyork .social-list > .social-item.odnoklassniki:hover,
+        .sc_team_carousel.la-united-kingdom .slz-team-block .social-list > .social-item.odnoklassniki:hover {
+            color: #f58220;
+        }
+
+/*=====  End of SOCIAL COLOR  =================*/
+

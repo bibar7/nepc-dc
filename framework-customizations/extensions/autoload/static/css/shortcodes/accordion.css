@@ -1,0 +1,155 @@
+/**
+*  STYLE FOR ACCORDION
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*  1.1 Variable
+*
+*  1.2 accordion icon plus
+*
+*  1.3 accordion icon arrow
+*
+*
+*/
+
+/*----------  1.1 Variable  ---------------------*/
+
+    .slz-accordion-group .accordion-panel + .accordion-panel {
+        margin-top: 15px;
+    }
+
+    .accordion-panel {
+        margin: 0;
+        box-shadow: none;
+        border: 2px solid #CF4A46;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+    }
+
+    .panel-heading {
+        background-color: transparent;
+        border: none;
+        color: #333333;
+        padding: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+    }
+
+    .panel-heading a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        color: #555555;
+    }
+
+    .panel-heading a:hover,
+    .panel-heading .check-data-collapsed:not(.collapsed) {
+        background-color: #CF4A46;
+        color: #ffffff;
+    }
+    .panel-heading a i,
+    .panel-heading a span {
+        padding: 10px 15px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 24px;
+        font-style: normal;
+        min-width: 40px;
+    }
+
+    .panel-heading.icons-left a span {
+        padding-right: 0;
+    }
+
+    .panel-heading.icons-left a span {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    .panel-collapse {
+        border-top: 1px solid #CF4A46;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .panel-heading.icons-left .icon-plus,
+    .panel-heading.icons-left .icon-arrow {
+        position: relative;
+        border-left: none;
+        // border-right: 2px solid #CF4A46;
+    }
+
+/*----------  1.2 accordion icon plus  ----------*/
+
+    .panel-heading .icon-plus {
+        right: 0;
+        text-align: center;
+        position: absolute;
+        font-size: inherit;
+        color: inherit;
+        // border-left: 1px solid #CF4A46;
+    }
+
+    .panel-heading .icon-plus:before {
+        // font-family: 'FontAwesome';
+        // content: '\f068';
+        content: '+';
+    }
+
+    .panel-heading .collapsed .icon-plus:before {
+        // font-family: 'FontAwesome';
+        // content: '\f067';
+        content: '-';
+    }
+
+/*----------  1.3 accordion icon arrow  ---------*/
+
+    .panel-heading .icon-arrow {
+        right: 0;
+        text-align: center;
+        position: absolute;
+        font-size: inherit;
+        color: inherit;
+        // border-left: 1px solid #CF4A46;
+    }
+
+    .panel-heading .icon-arrow:before {
+        font-family: 'FontAwesome';
+        content: '\f105';
+        min-width: 14px;
+        display: inline-block;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transition: transform 0.3s ease;
+        -webkit-transition: transform 0.3s ease;
+        -moz-transition: transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+    }
+
+    .panel-heading .collapsed .icon-arrow:before {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }

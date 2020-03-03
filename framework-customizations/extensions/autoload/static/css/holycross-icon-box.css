@@ -1,0 +1,483 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Icon Box Style 01
+ *		3. SC Icon Box Style 03
+ *		2.0 Service List
+ *		Responsive
+ */ 
+
+
+/*----------  1. General  ----------*/
+	
+	.slz-icon-box-1 {
+		padding: 0px;
+	}
+	.sc_icon_box .slz-list-block > .item {
+		margin-top: 35px;
+	}
+	.slz-icon-box-1 .icon-cell{
+		width: 70px;
+	}
+	
+	.slz-icon-box-1.style-vertical {
+		text-align: center;
+	}
+	.slz-icon-box-1.style-vertical .icon-cell {
+		display: inline-block;
+	}
+	.slz-icon-box-1.left {
+		text-align: left;
+	}
+	.slz-icon-box-1.right {
+		text-align: right;
+	}
+	.slz-icon-box-1.style-1 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.slz-icon-box-1.style-1 .icon-cell {
+		width: 48px;
+	}
+
+
+/*----------  2. SC Icon Box Style 01  ----------*/
+
+	.slz-icon-box-1 .wrapper-icon {
+		width: 70px;
+	    height: 70px;
+	    line-height: 68px;
+	    background-color: #cf4a46;
+	    border: 0;
+		display: inline-block;
+	    vertical-align: top;
+	    text-align: center;
+	    border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+	}
+	.slz-icon-box-1:hover .wrapper-icon {
+    	background-color: #ffffff;
+	}
+	.slz-icon-box-1:hover .wrapper-icon .slz-icon {
+		color: #cf4a46;
+	}
+
+	.slz-icon-box-1 .wrapper-icon .slz-icon {
+		color: #ffffff;
+		transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+	}
+	.sc_icon_box  .slz-icon-box-1.style-1 .wrapper-icon .slz-icon {
+		color: #cf4a46;
+	}
+	.slz-icon-box-1 .wrapper-info .title {
+		font-family: 'Poppins', sans-serif;
+		color: #333333;
+		line-height: 1.4;
+		font-weight: 600;
+		transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+	}
+
+	.slz-icon-box-1 .wrapper-info .title + .description {
+		color: #555555;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.slz-icon-box-1.style-vertical .content-cell {
+		padding-top: 20px;
+	}
+
+	.slz-icon-box-1.style-1:hover .wrapper-icon {
+		box-shadow: none;
+	}
+	.slz-icon-box-1.style-1 .content-cell {
+		vertical-align: middle;
+	}
+	.slz-icon-box-1.style-1 .description {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+	}
+	.slz-icon-box-1.style-1 .description a {
+		color: #1ea6d9;
+	}
+	.slz-icon-box-1.style-1 .wrapper-icon {
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+	}
+	.slz-icon-box-1.style-1 .wrapper-icon .slz-icon.vc-mono:before{
+		font-size: 30px !important;
+	}
+	.sc_icon_box .slz-list-block.style-03 .slz-icon-box-1.style-vertical {
+	    padding: 60px 30px;
+	}
+
+	.sc_icon_box .slz-icon-box-1:not(.style-1) .wrapper-icon ,
+	.sc_icon_box .slz-icon-box-1 .wrapper-icon-image .slz-icon-img{
+		-webkit-transition: all 0.8s ease;
+		-moz-transition: all 0.8s ease;
+		-ms-transition: all 0.8s ease;
+		-o-transition: all 0.8s ease;
+		transition: all 0.8s ease;
+		
+	}
+	.sc_icon_box .slz-icon-box-1:not(.style-1):hover .wrapper-icon ,
+	.sc_icon_box .slz-icon-box-1:hover .wrapper-icon-image .slz-icon-img {
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		-o-transform: translateY(-10px);
+		transform: translateY(-10px);
+		
+	}
+	
+/*----------  SC Icon Box Style 03  ----------*/
+	.style-03.slz-list-block {
+		margin: 0;
+	}
+	.style-03 .slz-icon-box-1 {
+		// min-height: 345px;
+		display: block;
+	}
+	.style-03.slz-list-block > .item .slz-icon-box-1.style-vertical .icon-cell {
+	    margin-top: 0;
+	}
+	.style-03.slz-list-block > .item {
+		padding: 0;
+	}
+
+	.style-03.slz-list-block .icon-cell {
+		margin-top: 40px;
+	}
+	.sc_icon_box .slz-list-block.style-03 .slz-icon-box-1.style-vertical {
+		padding-top: 70px;
+	}
+	.style-03 .slz-icon-box-1.style-vertical .content-cell {
+		padding-top: 0px;
+	}
+	.style-03 .slz-icon-box-1.style-vertical .icon-cell + .content-cell {
+		padding-top: 20px;
+	}
+	.style-03 .slz-icon-box-1.style-vertical .description  + .slz-btn{
+		margin-top: 18px;
+	}
+	.style-03 .slz-icon-box-1 .wrapper-info .title {
+		font-size: 24px;
+	}
+	.style-03 .slz-icon-box-1 .wrapper-info .title + .description {
+		margin-top: 20px;
+	    line-height: 1.7;
+	    display: block;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 4;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    max-height: 80px;
+	}
+
+	.style-03 .slz-icon-box-1 .slz-btn {
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		line-height: 1.6;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+		min-width: initial;
+		position: relative;
+		background-color: transparent;
+	}
+	.style-03 .slz-icon-box-1 .slz-btn:hover {
+		background-color: transparent;
+	}
+	.style-03 .slz-icon-box-1 .slz-btn:hover {
+		transform: translateX(-15px);
+		-webkit-transform: translateX(-15px);
+	}
+	.style-03 .slz-icon-box-1.left .slz-btn:hover {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+	}
+	.style-03 .slz-icon-box-1 .slz-btn .icons {
+		transform: translate(-50px,4px);
+		-webkit-transform: translate(-50px,4px);
+		opacity: 0;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+		position: absolute;
+		right: -15px;
+		top: 0;
+	}
+	.style-03 .slz-icon-box-1 .slz-btn:hover .icons {
+		opacity: 1;
+		transform: translate(0px,4px);
+		-webkit-transform: translate(0px,4px);
+	}
+
+	.style-03 .slz-icon-box-1 .wrapper-icon {
+		background: transparent;
+		border: 2px solid rgba(239, 98, 85, .5);
+	}
+	.style-03 .slz-icon-box-1:hover .wrapper-icon {
+		box-shadow: none;
+		background: transparent;
+	}
+	.style-03 .slz-icon-box-1:hover .wrapper-icon .slz-icon {
+		color: #ffffff;
+	}
+
+/*----------  Responsive  ----------*/
+
+
+/*========================================
+=            2.0 Service List            =
+========================================*/
+    .sc-service-list .slz-icon-box-1{
+        padding: 0px;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image .icon-cell{
+        width: 40%;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .icon-cell{
+        width: 100%;
+    }
+    .sc-service-list.slz-column-3 .slz-icon-box-1.slz-class-feature-image:not(.style-vertical) .wrapper-info .title{
+        font-size: 20px;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image .wrapper-icon-image{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .wrapper-icon-image:before{
+        content: "";
+        display: block;
+        padding-top: 67%;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .wrapper-icon-image .slz-icon-img{
+        position: absolute;
+        height: 100%;
+        width: auto;
+        left: 50%;
+        top: 0;
+        max-width: initial;
+        -webkit-transform: translate(-50%,0);
+        -moz-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+        -o-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .title{
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.4;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .title:hover {
+    	color: #CF4A46;
+    }
+    .sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .wrapper-info .title + .description{
+        margin-top: 20px;
+    }
+    
+    .sc-service-list .slz-icon-box-1 .readmore{
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+    }
+    .sc-service-list .slz-icon-box-1 .readmore .icons {
+	    opacity: 0;
+	    transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+	    position: absolute;
+	    top: 0;
+	    right: 50px;
+    }
+    .sc-service-list .slz-icon-box-1 .readmore:hover{
+        color: #CF4A46;
+        margin-left: -15px;
+    }
+    .sc-service-list .slz-icon-box-1.left .readmore:hover {
+    	margin-left: initial;
+    }
+    .sc-service-list .slz-icon-box-1.right .readmore:hover {
+    	margin-right: 15px;
+    }
+    .sc-service-list .slz-icon-box-1 .readmore:hover .icons {
+    	opacity: 1;
+    	right: -15px;
+    }
+
+    .sc-service-list .slz-icon-box-1.style-vertical .content-cell {
+        padding-top: 38px;
+    }
+/*----------  2.1 Servive list style 01  ----------*/
+
+/*----------  Service Single  ----------*/
+	.slz-services .service-detail-wrapper .title{
+		font-size: 32px;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+		line-height: 1.4;
+		color: #333333;
+		margin-top: 0px;
+		margin-bottom: 35px;
+	}
+	.service-detail-wrapper .service-gallery .slz-image-carousel .btn {
+		border-color: rgba(255, 255, 255, 0.18);
+		background-color: transparent;
+	}
+	.service-detail-wrapper .service-gallery .slz-image-carousel .btn .icons {
+		color: #FFFFFF;
+	}
+	.service-detail-wrapper .service-gallery .slz-image-carousel .btn:hover{
+		border-color: transparent;
+		background-color: rgba(255, 255, 255, 0.18);
+	}
+
+/*=====  End of 2.0 Service List  ======*/
+
+ 
+@media screen and (min-width:1600px) {
+	.sc_icon_box .slz-list-block.style-03 .slz-icon-box-1.style-vertical {
+	    padding: 60px 40px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.slz-icon-box-1 {
+		padding: 0;
+	}
+	.sc_icon_box .slz-list-block.style-03 > .item{
+		width: 50%;
+	}
+	.sc_icon_box  .slz-list-block.style-03.slz-column-4 > .item:nth-child(-n + 4), 
+	.sc_icon_box  .slz-list-block.style-03.slz-column-4 > .item:nth-child(-n + 3),
+	.sc_icon_box .slz-list-block.style-03 > .item,
+	.sc_icon_box .slz-list-block.slz-column-3.style-03 .item:nth-child(-n + 3){
+		margin-top: 0px;
+	}
+	.slz-icon-box-1.icon-box-item-1.style-1 {
+		padding: 20px;
+	}
+	.slz-icon-box-1.icon-box-item-1.style-1 .description {
+		word-break: break-all;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.sc-service-list.slz-list-block.slz-column-3 > .item {
+	    margin-top: 30px;
+	}
+	.sc-service-list.slz-list-block.slz-column-3 > .item:nth-child(-n + 2) {
+	    margin-top: 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.slz-icon-box-1 .wrapper-icon {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+	}
+	.slz-icon-box-1 .wrapper-icon .slz-icon {
+		font-size: 25px;
+	}
+	.slz-icon-box-1 .wrapper-icon-image {
+		min-width: 60px;
+	}
+
+	.sc-service-list .slz-icon-box-1.style-vertical .content-cell {
+		padding-top: 25px;
+	}
+
+	.sc-service-list .slz-icon-box-1 .wrapper-info .title {
+		font-size: 20px;
+	}
+
+	.sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .wrapper-info .title + .description {
+		margin-top: 15px;
+	}
+	.slz-services .service-detail-wrapper .title {
+		margin-bottom: 15px;
+	}
+
+}
+
+@media screen and (max-width:600px){
+	.sc_icon_box .slz-list-block.style-03 > .item{
+		width: 100%;
+	}
+	.sc-service-list .slz-icon-box-1 {
+		display: block;
+	}
+	.sc-service-list .slz-icon-box-1.slz-class-feature-image .icon-cell {
+		display: block;
+		width: 100%;
+	}
+
+	.sc-service-list .slz-icon-box-1.slz-class-feature-image .content-cell {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:480px){
+	.sc-service-list.slz-list-block.slz-column-3 > .item,
+    .sc-service-list.slz-list-block.slz-column-3 > .item:nth-child(-n + 2) {
+        margin-top: 40px;
+    }
+    .sc_icon_box .slz-list-block.style-03.slz-column-4 > .item:nth-child(-n + 4) {
+    	margin-top: 0;
+    }
+    .sc-service-list.slz-list-block.slz-column-3 > .item:nth-child(-n + 1) {
+        margin-top: 0;
+    }
+
+	.sc-service-list .slz-icon-box-1.style-vertical .content-cell {
+		padding-top: 20px;
+	}
+
+	.sc-service-list .slz-icon-box-1 .wrapper-info .title {
+		font-size: 20px;
+	}
+
+	.sc-service-list .slz-icon-box-1.slz-class-feature-image.style-vertical .wrapper-info .title + .description {
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.slz-icon-box-1 {
+		padding: 0;
+	}
+	.sc_main_title.style-2 .slz-main-title .title {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 380px) {
+	
+}

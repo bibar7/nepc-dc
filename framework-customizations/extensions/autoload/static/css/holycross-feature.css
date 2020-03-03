@@ -1,0 +1,123 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Feature List
+ *		Responsive
+ */ 
+
+
+/*----------  1. General  ----------*/
+	.slz-list-feature .slz-class-image.slz-icon-box-1 .wrapper-info .title{
+		font-family: 'Poppins', sans-serif;
+	}
+
+/*----------  2. SC Feature List  ----------*/
+
+	.slz-list-feature.slz-list-block > .item {
+		padding: 0 15px;
+	}
+
+	.slz-list-feature .slz-icon-box-1 {
+		padding: 5px;
+	}
+
+	.slz-list-feature .slz-class-image.slz-icon-box-1 .wrapper-info .title {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.slz-list-feature .slz-icon-box-1 .wrapper-info .description {
+		font-weight: 300;
+	}
+
+	.slz-list-feature .slz-icon-box-1 .wrapper-info .title + .description {
+		margin-top: 8px;
+	}
+
+	.slz-icon-box-1 .wrapper-icon-image {
+		position: relative;
+	}
+
+	.slz-class-image.style-vertical .icon-cell {
+	    display: block;
+	    overflow: hidden;
+	    width: 100%;
+	    height: auto;
+	}
+
+	.slz-class-image.style-vertical .icon-cell:before {
+	    content: '';
+	    padding-top: 67%;
+	    display: block;
+	}
+
+	.slz-class-image .wrapper-icon-image {
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 3;
+	    overflow: hidden;
+	    position: absolute;
+	}
+	.slz-class-image .wrapper-icon-image .slz-icon-img {
+	    position: absolute;
+	    width: 100%;
+	    height: auto;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	}
+
+	.slz-class-image.slz-icon-box-1 .wrapper-icon-image img {
+		border-radius: 0;
+	}
+
+/*----------  RESPONSIVE  ----------*/
+
+@media screen and (max-width:1024px) {
+	
+}
+@media screen and (max-width:768px) {
+	.slz-list-feature.slz-list-block > .item {
+		padding: 0 10px;
+	}
+
+	.slz-icon-box-1 .wrapper-info .title + .description {
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width:767px) {
+	
+}
+@media screen and (max-width:600px) {
+	
+}
+@media screen and (max-width:480px) {
+	.slz-list-feature .slz-icon-box-1.style-vertical .content-cell {
+		padding-top: 15px;
+	}
+
+	.slz-list-feature .slz-icon-box-1 .wrapper-info .title + .description {
+		margin-top: 0;
+	}
+	
+	.slz-blog-detail .slz-list-feature.slz-list-block.slz-column-2 > .item,
+	.slz-blog-detail .slz-list-feature.slz-list-block.slz-column-2 > .item:nth-child(-n + 2),
+	.slz-list-block.slz-list-feature.slz-column-3 > .item:nth-child(-n + 2),
+	.slz-list-block.slz-list-feature.slz-column-4 > .item:nth-child(-n + 2) {
+		margin-top: 20px;
+	}
+
+	.slz-list-block.slz-list-feature > .item {
+		margin-top: 20px;
+	}
+}

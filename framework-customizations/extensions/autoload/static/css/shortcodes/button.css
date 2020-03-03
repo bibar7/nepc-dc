@@ -1,0 +1,180 @@
+/**
+*  STYLE FOR BUTTON
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*  1.1 Button
+*
+*  1.2 button image
+*
+*  1.3 group button
+*
+*  1.4 button icon absolute
+*
+*  RESPONSIVE
+*
+*
+*/
+
+/*----------  1.1 Button  -----------------------*/
+	.slz-btn {
+        padding: 14px 30px;
+        text-align: center;
+        display: inline-block;
+        line-height: 1.3;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        min-width: 180px;
+        border-radius: 2px;
+        border: 2px solid #cf4a46;
+        background-color: #cf4a46;
+        color: #ffffff;
+        height: auto;
+        font-weight: 500;
+        transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+    }
+
+    .slz-btn + .slz-btn {
+        margin-left: 15px;
+    }
+    .slz-btn:hover, 
+    .slz-btn:focus {
+        color: #333333;
+        background-color: #FFFFFF;
+        border-color: #cf4a46;
+    }
+
+    .slz-btn > .btn-icon + .btn-text {
+        margin-left: 10px;
+    }
+
+    .slz-btn > .btn-text + .btn-icon {
+        margin-left: 10px;
+    }
+
+    .slz-btn.box-shadow {
+	    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+	}
+    .slz-btn.box-shadow:hover{
+        -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.05);
+    }
+
+	.slz-btn .icon-box-shadow {
+	    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+	}
+
+/*----------  1.2 button image  -----------------*/
+
+    .btn-img {
+        width: 200px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: transparent !important;
+    }
+
+    .btn-img:hover,
+    .btn-img:focus {
+        border: none;
+        background-color: transparent;
+    }
+
+    .btn-img:hover img,
+    .btn-img:focus img {
+        opacity: 0.9;
+    }
+
+    .btn-img img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .btn-img .btn-text {
+    	display: none;
+    }
+
+/*----------  1.3 group button  -----------------*/
+
+    .slz-group-btn .slz-btn {
+        margin-left: 15px;
+    }
+
+    .slz-group-btn .slz-btn:first-child {
+        margin-left: 0;
+    }
+
+/*----------  1.4 button icon absolute  ---------*/
+
+    .btn-absolute .btn-text {
+    	margin-left: 0 !important;
+    }
+
+    .btn-absolute .btn-icon {
+        position: absolute;
+        opacity: 0;
+        right: 50%;
+        top: 50%;
+        border: none;
+        font-size: 14px;
+        margin-left: 0;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .btn-absolute:hover {
+    	padding-right: 50px;
+    }
+
+    .btn-absolute:hover .btn-icon {
+		right: 20px;
+		opacity: 1;
+    }
+
+/*===========================================
+=            RESPONSIVE                     =
+===========================================*/
+    @media screen and (max-width: 480px) {
+        .slz-group-btn .slz-btn,
+        .slz-group-btn .slz-btn:first-child {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        .slz-group-btn .slz-btn + .slz-btn,
+        .slz-btn + .slz-btn {
+            margin-top: 15px;
+            margin-left: auto;
+        }
+    }
+
+/*=====  End of RESPONSIVE  ================*/
+    

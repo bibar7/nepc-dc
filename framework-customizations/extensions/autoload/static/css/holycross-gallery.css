@@ -1,0 +1,40 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Gallery 
+ *		Responsive
+ */ 
+
+ /*----------  1. General  ----------*/
+ 
+
+/*----------  2. SC Gallery  ----------*/
+	.slz-gallery-tab-01 .grid-item > .block-image .dh-overlay,
+	.slz-image-carousel .item > .block-image .dh-overlay{
+	    background-color: #cf4a46;
+	    opacity: 0.5;
+	    pointer-events: none;
+	}
+
+	.slz-image-carousel .btn.slick-arrow:focus {
+		outline: 0;
+	}
+
+	.slz-carousel-syncing .slider-nav .thumbnail-image:after {
+		background-color: #cf4a46;
+		opacity: 0.5;
+	    transition: all 0.6s ease;
+	    -webkit-transition: all 0.6s ease;
+	}
+
+	.slz-carousel-centermode .block-image:after, .slz-carousel-center .block-image:after {
+		background-color: #cf4a46;
+		opacity: 0.5;
+	}

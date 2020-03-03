@@ -1,0 +1,508 @@
+/*
+*  STYLE FOR PRICING BOX
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*   1. Pricing Box Layout 1
+*   2. Pricing Box Layout 2
+*   3. Pricing Box Layout 3
+*   4. Pricing Box Layout 4
+*
+*
+*
+*
+*
+*/
+
+
+
+
+/*===============================================
+=            1. Pricing Box Layout 1            =
+===============================================*/
+
+    .st-florida .slz-pricing-box {
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.18);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .st-florida .pricing-header  {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .st-florida .pricing-price {
+        font-size: 36px;
+        color: #da0f32;
+        padding-top: 10px;
+        direction: rtl;
+        line-height: 1.1;
+    }
+
+    .st-florida .pricing-price .unit {
+        font-size: 16px;
+        margin-left: -5px;
+    }
+
+    .st-florida .pricing-price .per {
+        font-size: 16px;
+        display: block;
+        color: #b7b1b1;
+        text-transform: lowercase;
+        direction: initial;
+    }
+
+    .st-florida .pricing-title {
+        font-size: 16px;
+        font-style: italic;
+        color: #333;
+    }
+
+    .st-florida .pricing-body {
+        padding: 0 0 40px 0;
+        text-align: left;
+    }
+
+    .st-florida .pricing-body .item {
+        line-height: 24px;
+        font-size: 13px;
+        padding: 8px 30px;
+    }
+
+    .st-florida .pricing-body .item .slz-icon {
+        float: right;
+        line-height: 24px;
+        color: #da0f32;
+    }
+
+    .st-florida .pricing-body .item + .item {
+       
+    }
+
+    .st-florida .pricing-body .item:nth-child(2n + 1) {
+        background-color: #e8eff5;
+    }
+
+    .st-florida .pricing-footer .pricing-button {
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: #a7a6a6;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .st-florida .pricing-footer .pricing-button:hover,
+    .st-florida .slz-pricing-box.active .pricing-button {
+        background-color: #da0f32;
+        color: #fff;
+    }
+
+    .st-florida .slz-pricing-box:hover,
+    .st-florida .slz-pricing-box.active {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+    }
+
+
+/*=====  End of 1. Pricing Box Layout 1  ======*/
+
+
+/*===============================================
+=            2. Pricing Box Layout 2            =
+===============================================*/
+    .st-chennai .slz-pricing-box {
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.18);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .st-chennai .pricing-header  {
+        padding: 30px 20px;
+        display: table;
+        width: 100%;
+        background-color: #da0f32;
+        color: #fff;
+    }
+
+    .st-chennai .pricing-price {
+        font-size: 36px;
+        direction: rtl;
+        line-height: 1.1;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .st-chennai .pricing-price .unit {
+        font-size: 16px;
+        margin-left: -5px;
+    }
+
+    .st-chennai .pricing-price .per {
+        font-size: 16px;
+        display: block;
+        text-transform: lowercase;
+        direction: initial;
+    }
+
+    .st-chennai .pricing-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: 500;
+    }
+
+    .st-chennai .pricing-body {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .st-chennai .pricing-body +  .pricing-footer {
+        padding-top: 0;
+    }
+
+    .st-chennai .pricing-body .item {
+        line-height: 24px;
+        font-size: 13px;
+    }
+    
+    .st-chennai .pricing-body .item .slz-icon {
+        margin-right: 5px;
+    }
+
+    .st-chennai .pricing-body .item + .item {
+       padding-top: 15px;
+    }
+
+    .st-chennai .pricing-footer .pricing-button {
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #da0f32;
+        border: 1px solid #da0f32;
+        color: #333;
+        min-width: 180px;
+        border-radius: 0;
+        font-size: 14px;
+        white-space: normal;
+        color: #fff;
+    }
+
+    .st-chennai .pricing-footer .pricing-button:before {
+        content: "\f00c";
+        font-family: fontAwesome;
+        margin-right: 10px;
+        font-weight: 300;
+    }
+
+    .st-chennai .pricing-footer .pricing-button:hover,
+    .st-chennai .slz-pricing-box.active .pricing-button {
+        color: #da0f32;
+        background-color: #fff;
+    }
+    .st-chennai .pricing-footer {
+        padding: 30px 30px 40px 30px;
+        text-align: center;
+    }
+
+    .st-chennai .slz-pricing-box:hover,
+    .st-chennai .slz-pricing-box.active {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+
+    }
+
+/*=====  End of 2. Pricing Box Layout 2  ======*/
+
+
+
+/*===============================================
+=            3. Pricing Box Layout 3            =
+===============================================*/
+    .st-london .slz-pricing-box {
+        border: 1px solid  rgba(0, 0, 0, 0.18);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .st-london .pricing-header  {
+        padding: 20px 20px 40px 20px;
+        border-bottom: 1px solid  rgba(0, 0, 0, 0.18);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .st-london .pricing-price {
+        font-size: 30px;
+        line-height: 1.1;
+        padding-top: 10px;
+        color: #da0f32;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .st-london .pricing-price .unit {
+        font-size: 16px;
+        margin-right: -5px;
+    }
+
+    .st-london .pricing-price .per {
+        font-size: 16px;
+        display: block;
+        text-transform: lowercase;
+    }
+
+    .st-london .pricing-title {
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .st-london .pricing-title:before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 2px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #da0f32;
+        top: -21px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+    }
+
+    .st-london .pricing-body {
+        padding: 0;
+    }
+
+
+    .st-london .pricing-body .item {
+        line-height: 24px;
+        font-size: 13px;
+        padding: 8px 0;
+        border-bottom: 1px solid  rgba(0, 0, 0, 0.18);
+    }
+
+    
+    
+    .st-london .pricing-body .item .slz-icon {
+        margin-right: 5px;
+    }
+
+    .st-london .pricing-body .item + .item {
+    }
+
+    .st-london .pricing-footer .pricing-button {
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #333;
+        border: 1px solid #333;
+        color: #333;
+        min-width: 180px;
+        border-radius: 0;
+        font-size: 14px;
+        white-space: normal;
+        color: #fff;
+    }
+
+
+    .st-london .pricing-footer .pricing-button:hover,
+    .st-london .slz-pricing-box.active .pricing-button {
+        color: #333;
+        background-color: #fff;
+    }
+    .st-london .pricing-footer {
+        padding: 30px 30px 40px 30px;
+        text-align: center;
+    }
+
+    .st-london .slz-pricing-box:hover,
+    .st-london .slz-pricing-box.active {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+    }
+
+    .st-london .slz-pricing-box:hover .pricing-title:before,
+    .st-london .slz-pricing-box.active .pricing-title:before {
+        background-color: #fff;
+    }
+
+    .st-london .slz-pricing-box:hover .pricing-header,
+    .st-london .slz-pricing-box.active .pricing-header {
+        background-color: #da0f32;
+        color: #fff;
+    }
+
+    .st-london .slz-pricing-box:hover .pricing-price,
+    .st-london .slz-pricing-box.active .pricing-price {
+        color: #fff;
+    }
+
+
+/*=====  End of 3. Pricing Box Layout 3  ======*/
+
+
+/*===============================================
+=            4. Pricing Box Layout 4            =
+===============================================*/
+    .st-milan .slz-pricing-box {
+       
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-align:center;
+    }
+
+    .st-milan .pricing-label {
+        padding: 5px 20px;
+        background-color: #da0f32;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: #fff;
+    }
+
+    .st-milan .pricing-header  {
+        text-align: center;
+        padding: 30px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: none;
+    }
+
+    .st-milan .pricing-price {
+        font-size: 36px;
+        color: #da0f32;
+        padding-top: 15px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    .st-milan .pricing-price .unit {
+        font-size: 16px;
+        margin-right: -5px;
+        font-weight: 300;
+    }
+
+    .st-milan .pricing-price .per {
+        font-size: 16px;
+        display: block;
+        text-transform: lowercase;
+        font-weight: 300;
+    }
+
+    .st-milan .pricing-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .st-milan .sub-title {
+        padding-top: 5px;
+    }
+
+    .st-milan .pricing-body {
+        padding: 30px 20px;
+        position: relative;
+        margin: 0 auto;
+        border-left: 1px solid rgba(0, 0, 0, 0.05);
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .st-milan .pricing-body:before {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 2px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.1);
+        top: 0;
+    }
+
+    .st-milan .pricing-body +  .pricing-footer {
+        padding-top: 0;
+    }
+
+    .st-milan .pricing-body .item {
+        line-height: 24px;
+        font-size: 13px;
+    }
+    
+    .st-milan .pricing-body .item .slz-icon {
+        margin-right: 5px;
+    }
+
+    .st-milan .pricing-body .item + .item {
+       padding-top: 5px;
+    }
+
+    .st-milan .pricing-footer .pricing-button {
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: #da0f32;
+        color: #fff;
+        width: 100%;
+        border-radius: 0;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .st-milan .pricing-footer {
+       
+    }
+
+    .st-milan .pricing-footer .pricing-button:hover,
+    .st-milan .slz-pricing-box.active .pricing-button {
+
+    }
+
+    .st-milan .slz-pricing-box:hover,
+    .st-milan .slz-pricing-box.active {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+    }
+    .st-milan .slz-pricing-box:hover .pricing-label,
+    .st-milan .slz-pricing-box.active .pricing-label {
+        opacity: 1;
+    }
+
+   
+
+
+
+
+/*=====  End of 4. Pricing Box Layout 4  ======*/

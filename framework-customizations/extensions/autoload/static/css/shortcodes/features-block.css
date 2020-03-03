@@ -1,0 +1,483 @@
+/*
+*  STYLE FOR FEATURE BLOCK
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*  1. General
+*    - 1.0. Feature Block
+*    - 1.1. List Layout
+*  2. Layout United States
+#    - 2.0. US General
+*    - 2.1. Style Florida
+*    - 2.2. Style California
+*  3. Layout India
+*  4. Layout United Kingdom
+*
+*  n. Responsive
+*
+*
+*/
+
+
+/*==================================
+=            1. General            =
+==================================*/
+
+    /*----------  1.0. Feature Block  -----------*/
+        .slz-feature-block {
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .slz-feature-block.block-square {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        .slz-feature-block.block-circle {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+        .slz-feature-block .number {
+            color: #dedede;
+        }
+
+        .slz-feature-block .title {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .slz-feature-block .title.underline {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .slz-feature-block .title.underline:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #9a9a9a;
+        }
+
+        .slz-feature-block .wrapper-icon-image.image-circle {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+    /*----------  1.1. List Layout  -----------*/
+        .slz-features-block {
+            font-size: 0;
+            margin: 0 -15px;
+        }
+
+        .slz-features-block > .item {
+            font-size: 14px;
+            padding: 0 15px;
+            margin-top: 30px;
+            vertical-align: top;
+            display: inline-block;
+        }
+        
+        .slz-features-block.slz-column-1 > .item {
+            width: 100%;
+        }
+
+        .slz-features-block.slz-column-1 > .item:first-child {
+            margin-top: 0;
+        }
+
+        .slz-features-block.slz-column-2 > .item {
+            width: 50%;
+        }
+
+        .slz-features-block.slz-column-2 > .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+
+        .slz-features-block.slz-column-3 > .item {
+            width: 33.3%;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(3n) {
+            width: 33.4%;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+
+        .slz-features-block.slz-column-4 > .item {
+            width: 25%;
+        }
+
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 4) {
+            margin-top: 0;
+        }        
+
+/*=====  End of 1. General  ======*/
+
+
+/*===============================================
+=            2. Layout United States            =
+===============================================*/
+
+    /*----------  2.0. US General  ----------*/
+        .la-united-states .slz-feature-block .title {
+            font-weight: 700;
+        }
+
+        .la-united-states .slz-feature-block .title + .description {
+            margin-top: 15px;
+        }
+
+    /*----------  2.1. Style Florida  ----------*/
+        .st-florida .slz-feature-block .number {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 900;
+        }
+
+        .st-florida .slz-feature-block .number + .features-content {
+            margin-top: 15px;
+        }            
+
+    /*----------  2.2. Style California  ----------*/
+        .st-california .slz-feature-block {
+            padding: 50px 25px 25px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+        }
+
+        .st-california .slz-feature-block .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 7px 10px 4px 10px;
+            font-weight: 700;
+            color: #333;
+            background-color: #eee;
+        }
+
+/*=====  End of 2. Layout United States  ======*/
+
+
+/*=======================================
+=            3. Layout India            =
+=======================================*/
+
+    /*----------  3.0. India General  ----------*/
+        .la-india .slz-feature-block {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #eee;
+            text-align: center;
+        }
+
+        .la-india .slz-feature-block:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        .la-india .slz-feature-block .slz-feature-block-wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            -ms-transform: translate3d(-50%, -50%, 0);
+            -o-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        .la-india .slz-feature-block .slz-icon {
+            font-size: 50px;
+        }
+
+        .la-india .slz-feature-block .slz-icon-img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .la-india .slz-feature-block .icon-cell + .content-cell {
+            margin-top: 10px;
+        }
+
+        .la-india .slz-feature-block .content-cell {
+            padding: 0 15px;
+        }
+
+        .la-india .slz-feature-block .title {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .la-india .slz-feature-block .title.underline {
+            padding-bottom: 5px;
+        }
+
+        .la-india .slz-feature-block .title.underline:before {
+            left: 50%;
+            width: 25px;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .la-india .slz-feature-block .title + .description {
+            margin-top: 10px;
+        }
+
+        .la-india .slz-feature-block .description {
+            max-height: 75px;
+        }
+
+        .vc_col-sm-6 .la-india .slz-feature-block .description {
+            max-height: 45px;
+        }
+
+        .la-india .slz-feature-block .mCSB_inside > .mCSB_container {
+            margin-right: 0;
+        }
+
+        .la-india .slz-feature-block .mCSB_scrollTools {
+            width: 10px;
+        }
+
+    /*----------  3.1. Style Mumbai  ----------*/
+        .st-mumbai .slz-feature-block .description {
+            padding: 0 15px;
+        }
+
+/*=====  End of 3. Layout India  ======*/
+
+
+/*================================================
+=            4. Layout United Kingdom            =
+================================================*/
+
+    /*----------  4.0. UK General  ----------*/
+        .la-united-kingdom .slz-feature-block .wrapper-icon-image {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .la-united-kingdom .slz-feature-block .wrapper-icon-image:before {
+            content: '';
+            display: block;
+            padding-top: 67%;
+        }
+
+        .la-united-kingdom .slz-feature-block .wrapper-icon-image .slz-icon-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .la-united-kingdom .slz-feature-block .image-cell + .content-cell {
+            margin-top: 20px;
+        }
+
+        .la-united-kingdom .slz-feature-block .content-cell {
+            text-align: center;
+        }
+
+        .la-united-kingdom .slz-feature-block .title {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .la-united-kingdom .slz-feature-block .title.underline:before {
+            left: 50%;
+            width: 100px;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .la-united-kingdom .slz-feature-block .title + .description {
+            margin-top: 10px;
+        }
+
+        .la-united-kingdom .slz-feature-block .description {
+            padding: 0 15px;
+        }
+
+    /*----------  4.1. Style Harogate  ----------*/
+        .st-harogate .slz-feature-block .wrapper-icon-image {
+            max-width: 175px;
+            margin: 0 auto;
+        }
+
+        .st-harogate .slz-feature-block .wrapper-icon-image:before {
+            padding-top: 100%;
+        }
+    
+    /*----------  4.2. Style Leeds  ----------*/
+        .st-leeds .slz-feature-block {
+            display: table;
+            width: 100%;
+        }
+
+        .st-leeds .slz-feature-block .image-cell {
+            display: table-cell;
+            vertical-align: top;
+            width: 100px;
+        }
+
+        .st-leeds .slz-feature-block .content-cell {
+            display: table-cell;
+            vertical-align: top;
+            width: auto;
+            text-align: left;
+        }
+
+        .st-leeds .slz-feature-block .image-cell + .content-cell {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        .st-leeds .slz-feature-block .title.underline:before {
+            width: 50px;
+            left: 0;
+            -webkit-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+
+        .st-leeds .slz-feature-block .description {
+            padding: 0;
+        }
+
+/*=====  End of 4. Layout United Kingdom  ======*/
+
+
+/*=====================================
+=            n. Responsive            =
+=====================================*/
+
+    @media screen and (max-width: 1024px) {
+        .slz-features-block.slz-column-4 > .item {
+            width: 33.33%;
+        }
+
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 4) {
+            margin-top: 30px;
+        }
+
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 3) {
+            margin-top: 0px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .slz-features-block.slz-column-3 > .item,
+        .slz-features-block.slz-column-3 > .item:nth-child(3n),
+        .slz-features-block.slz-column-4 > .item {
+            width: 50%;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 3),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 3) {
+            margin-top: 30px;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 2),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 2) {
+            margin-top: 0px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .slz-features-block {
+            margin: 0 -8px;
+        }
+
+        .slz-features-block > .item {
+            padding: 0 8px;
+            margin-top: 15px;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 3),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 4) {
+            margin-top: 15px;
+        }
+
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 2),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item,
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item:nth-child(3n),
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-4 > .item {
+            width: 33.33%;
+        }
+
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item:nth-child(-n + 3),
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-4 > .item:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .slz-features-block.slz-column-2 > .item,
+        .slz-features-block.slz-column-3 > .item,
+        .slz-features-block.slz-column-3 > .item:nth-child(3n),
+        .slz-features-block.slz-column-4 > .item {
+            width: 100%;
+        }
+
+        .slz-features-block.slz-column-2 > .item:nth-child(-n + 2),
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 2),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 2) {
+            margin-top: 15px;
+        }
+
+        .slz-features-block.slz-column-2 > .item:nth-child(-n + 1),
+        .slz-features-block.slz-column-3 > .item:nth-child(-n + 1),
+        .slz-features-block.slz-column-4 > .item:nth-child(-n + 1) {
+            margin-top: 0;
+        }
+
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item,
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item:nth-child(3n),
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-4 > .item {
+            width: 50%;
+        }
+
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item:nth-child(-n + 3),
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-4 > .item:nth-child(-n + 3) {
+            margin-top: 15px;
+        }
+
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-3 > .item:nth-child(-n + 2),
+        .vc_col-sm-6 .la-india .slz-features-block.slz-column-4 > .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+    }
+
+/*=====  End of n. Responsive  ======*/

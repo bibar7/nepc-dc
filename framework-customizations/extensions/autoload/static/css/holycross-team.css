@@ -1,0 +1,828 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Team List
+ *		3. SC Single Team
+ *		4. SC Team Carousel
+ *		Responsive
+ */ 
+
+
+/*----------  General  ----------*/
+/*----------  1. Team Layout 1  ----------*/
+    .slz-block-team-01 {
+        font-size: 14px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+    }
+
+    .slz-block-team-01 .team-img {
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    .slz-block-team-01 .team-img:before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+
+    .slz-block-team-01 .team-img .img-full {
+        width: auto;
+        height: 100%;
+        max-width: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .slz-block-team-01 .team-img .link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+    .slz-block-team-01 .team-body {
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    .slz-block-team-01 .team-body .title {
+        font-weight: 700;
+        color: #213047;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .slz-block-team-01 .team-body .title:hover {
+        color: #415f8d;
+    }
+
+    .slz-block-team-01 .team-body .title + .position {
+        margin-top: 5px;
+    }
+
+    .slz-block-team-01 .team-body .position {
+        color: #666c72;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .slz-block-team-01 .team-body .position + .description {
+        margin-top: 20px;
+    }
+    
+    .slz-block-team-01 .team-body .position + .slz-info-block {
+        margin-top: 10px;
+    }
+    
+    .slz-block-team-01 .team-body .slz-info-block + .description {
+        margin-top: 10px;
+    }
+    
+    .slz-block-team-01 .team-body .description + .social-list .item {
+        margin-top: 10px;
+    }
+    
+    .slz-block-team-01 .description-wrapper + .social-list {
+        margin-top: 10px;
+    }
+    
+    .slz-block-team-01 .social-list .item {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+        color: #666c72;
+        display: inline-block;
+    }
+    
+    .slz-block-team-01 .social-list .item:first-child {
+        margin-left: 0px;
+    }
+    
+    .slz-block-team-01 .social-list .item:last-child {
+        margin-right: 0px;
+    }
+    
+    .slz-block-team-01 .social-list .item .text {
+        display: none;
+    }
+    
+    .slz-block-team-01.team-padding-box {
+        padding: 15px;
+    }
+
+    .slz-block-team-01.team-padding-box.team-circle-img .team-img {
+        padding-top: 0px;
+    }
+
+    .slz-block-team-01.team-padding-box .team-body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .slz-block-team-01 .slz-info-block {
+        display: block;
+        width: 100%;
+    }
+
+    .slz-block-team-01 .slz-info-block:before {
+        content: "";
+        display: table;
+    }
+
+    .slz-block-team-01 .slz-info-block:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .slz-block-team-01 .slz-info-block .mobile {
+        position: relative;
+        display: block;
+        color: #666c72;
+    }
+
+    .slz-block-team-01 .slz-info-block .mobile:before {
+        font-family: 'FontAwesome';
+        content: "\f095";
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+    .slz-block-team-01 .slz-info-block .email {
+        position: relative;
+        display: block;
+        color: #666c72;
+    }
+
+    .slz-block-team-01 .slz-info-block .email:before {
+        font-family: 'FontAwesome';
+        content: "\f0e0";
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+/*----------  2. Team Layout 2  ----------*/
+    .slz-block-team-02 {
+        background-color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .slz-block-team-02 .block-image {
+        position: relative;
+        background: #fff;
+    }
+
+    .slz-block-team-02 .block-image:before,
+    .slz-block-team-02 .block-image:after {
+        content: none;
+    }
+
+    .slz-block-team-02 .team-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+    .slz-block-team-02 .team-img:before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+
+    .slz-block-team-02 .team-img .img-full {
+        width: auto;
+        height: 100%;
+        max-width: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .slz-block-team-02 .team-img .link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+    .slz-block-team-02 .team-img + .social-list {
+        border: 1px solid #ddd;
+        border-bottom: none;
+    }
+
+    .slz-block-team-02 .team-img + .social-list .item {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .slz-block-team-02 .team-body {
+        padding: 15px;
+        border: 1px solid #ddd;
+    }
+
+    .slz-block-team-02 .team-body .title {
+        font-weight: 700;
+        color: #213047;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .slz-block-team-02 .team-body .title:hover {
+        color: #415f8d;
+    }
+
+    .slz-block-team-02 .team-body .position {
+        color: #666c72;
+        font-weight: 500;
+    }
+
+    .slz-block-team-02 .team-body .position + .description {
+        margin-top: 20px;
+    }
+
+    .slz-block-team-02 .team-body .position + .slz-info-block {
+        margin-top: 10px;
+    }
+
+    .slz-block-team-02 .team-body .slz-info-block + .description {
+        margin-top: 10px;
+    }
+
+    .slz-block-team-02 .social-list {
+        margin-top: 0px;
+    }
+
+    .slz-block-team-02 .social-list .item {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+        color: #666c72;
+        display: inline-block;
+    }
+
+    .slz-block-team-02 .social-list .item:first-child {
+        margin-left: 0px;
+    }
+
+    .slz-block-team-02 .social-list .item:last-child {
+        margin-right: 0px;
+    }
+
+    .slz-block-team-02 .social-list .item .text {
+        display: none;
+    }
+
+    .slz-block-team-02.team-no-social .team-body .description {
+        margin-bottom: 0px;
+    }
+
+    .slz-block-team-02.team-no-social .social-list {
+        display: none;
+    }
+
+    .slz-block-team-02.team-no-social.team-no-description .team-body .position {
+        margin-bottom: 0px;
+    }
+
+    .slz-block-team-02 .slz-info-block {
+        display: block;
+        width: 100%;
+    }
+
+    .slz-block-team-02 .slz-info-block:before {
+        content: "";
+        display: table;
+    }
+
+    .slz-block-team-02 .slz-info-block:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .slz-block-team-02 .slz-info-block .mobile {
+        position: relative;
+        display: block;
+        color: #666c72;
+    }
+
+    .slz-block-team-02 .slz-info-block .mobile:hover {
+        color: #337ab7;
+    }
+
+    .slz-block-team-02 .slz-info-block .mobile:before {
+        font-family: 'FontAwesome';
+        content: "\f095";
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+    .slz-block-team-02 .slz-info-block .email {
+        position: relative;
+        display: block;
+        color: #666c72;
+    }
+
+    .slz-block-team-02 .slz-info-block .email:hover {
+        color: #337ab7;
+    }
+
+    .slz-block-team-02 .slz-info-block .email:before {
+        font-family: 'FontAwesome';
+        content: "\f0e0";
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+/*----------  SC Team List  ----------*/
+	.slz-block-team-01,
+	.slz-block-team-02 {
+		position: relative;
+		background-color: transparent;
+	}
+
+	.slz-block-team-01 .block-image,
+	.slz-block-team-02 .block-image {
+
+	}
+	
+	.slz-block-team-01 .team-img,
+	.slz-block-team-02 .team-img {
+		margin: 0px 45px;
+		margin-bottom: 15px;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+		z-index: 0;
+	}
+
+	.slz-block-team-01 .team-img .link:before,
+	.slz-block-team-02 .team-img .link:before {
+		content: "";
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 5px;
+		left: 5px;
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		background-color:#CF4A46;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		z-index: 5;
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transition: all 0.6s ease;
+		-moz-transition: all 0.6s ease;
+		-ms-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+		transition: all 0.6s ease;
+	}
+	.slz-block-team-01 .team-img:hover .link:before,
+	.slz-block-team-02 .team-img:hover .link:before{
+		opacity: 0.8;
+	}
+	.slz-block-team-01 .team-img:hover:after,
+	.slz-block-team-02 .team-img:hover:after{
+		opacity: 1;
+	}
+	.slz-block-team-01 .team-img:after,
+	.slz-block-team-02 .team-img:after{
+		content: "+";
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    font-size: 36px;
+	    z-index: 10;
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    color: #FFFFFF;
+	    pointer-events: none;
+	    opacity: 0;
+	    top: 0;
+	    left: 0;
+		-webkit-transition: all 0.6s ease;
+		-moz-transition: all 0.6s ease;
+		-ms-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+		transition: all 0.6s ease;
+	}
+
+	.slz-block-team-01 .team-img:hover,
+	.slz-block-team-02 .team-img:hover {
+		-webkit-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.15);
+	}
+	.slz-block-team-01 .team-img:before,
+	.slz-block-team-02 .team-img:before {
+		padding-top: 100%;
+	}
+	.slz-block-team-01 .team-img .img-full,
+	.slz-block-team-02 .team-img .img-full {
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+		border-radius: 50%;
+	}
+	
+	.slz-block-team-01 .team-body {
+		border: 0;
+		padding-top: 5px;
+		padding-bottom: 25px;
+		position: relative;
+		background-color: transparent;
+	}
+	.slz-block-team-01 .team-body:before,
+	.slz-block-team-02 .team-body:before {
+	    content: "";
+	    position: absolute;
+	    bottom: 0;
+	    height: 1px;
+	    background-color: #ebebeb;
+	    left: 0;
+	    right: 0;
+	}
+	.slz-block-team-02 .team-body {
+		border: 0;
+		padding-top: 0px;
+	}
+	.slz-block-team-01 .team-body .title,
+	.slz-block-team-02 .team-body .title {
+		color: #333333;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+	}
+	.slz-block-team-01:hover .team-body .title,
+	.slz-block-team-02:hover .team-body .title {
+		color: #cf4a46;
+	}
+	.slz-block-team-01 .team-body .title + .position,
+	.slz-block-team-02 .team-body .title + .position {
+		margin-top: 0;
+	}
+	.slz-block-team-01 .team-body .position,
+	.slz-block-team-02 .team-body .position {
+		font-family: 'Crimson Text', serif;
+		font-weight: 400;
+		font-size: 18px;
+		font-style: italic;
+		color: #cf4a46;
+	}
+
+	.slz-block-team-01 .slz-info-block,
+	.slz-block-team-02 .slz-info-block {
+		margin-top: 5px;
+	}
+	.slz-block-team-01 .slz-info-block .info-item:before,
+	.slz-block-team-02 .slz-info-block .info-item:before {
+		color: #cf4a46;
+	}
+
+	.slz-block-team-01 .description-wrapper,
+	.slz-block-team-02 .description-wrapper {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.slz-list-block .social-list .item,
+	.social-list .item {
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		background-color: #f5f4f4;
+		border-radius: 50%;
+	}
+	.slz-list-block .social-list i.icon,
+	.social-list i.icon  {
+		margin-left: 0;
+		color: #cf4a46;
+		transition: color 0.4s ease;
+		-webkit-transition: color 0.4s ease;
+	}
+	/* .slz-block-item-01.portfolio-list  */
+	.tool-list li:hover,
+	.sc_team_carousel .slz-carousel-wrapper .btn:hover,
+	.sc_portfolio_list .slz-carousel-wrapper .btn:hover {
+		background-color: #CF4A46;
+		color: #FFFFFF;
+	}
+	.slz-block-team-01 .description-wrapper + .social-list,
+	.slz-block-team-02 .description-wrapper + .social-list {
+		margin-top: 15px;
+	}
+
+	.slz-block-team-02 .team-img + .social-list {
+		border: 0;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.slz-block-team-02 .team-img + .social-list .item {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	.slz-block-team-01 .description-wrapper + .social-list .item  {
+		margin-bottom: 5px;
+	}
+
+	.slz-block-team-01 .social-list .item:first-child,
+	.slz-block-team-02 .social-list .item:first-child {
+		margin-left: 5px;
+	}
+	.slz-block-team-01 .social-list .item:last-child,
+	.slz-block-team-02 .social-list .item:last-child {
+		margin-right: 5px;
+	}
+
+	.slz-list-block .social-list .item:hover .facebook,
+	.social-list .item:hover .facebook {
+		color: #3765a3;
+	}
+	.slz-list-block .social-list .item:hover .twitter,
+	.social-list .item:hover .twitter {
+		color: #33ccff;
+	}
+	.slz-list-block .social-list .item:hover,
+	.social-list .item:hover {
+	    background-color: #ffffff;
+	    box-shadow: 0 0 10px 0 #e0e0e0;
+	    -webkit-box-shadow: 0 0 10px 0 #e0e0e0;
+	}
+
+	.slz-list-block .social-list .item:hover .google,
+	.social-list .item:hover .google,
+	.slz-list-block .social-list .item:hover .google-plus,
+	.social-list .item:hover .google-plus {
+		color: #dc4638;
+	}
+	.slz-list-block .social-list .item:hover .pinterest,
+	.social-list .item:hover .pinterest {
+		color: #bd081c;
+	}
+	.slz-list-block .social-list .item:hover .vimeo,
+	.social-list .item:hover .vimeo {
+		color: #00ADEF;
+	}
+	.slz-list-block .social-list .item:hover .skype,
+	.social-list .item:hover .skype {
+		color: #00AFF0;
+	}
+	.slz-list-block .social-list .item:hover .youtube,
+	.social-list .item:hover .youtube {
+		color: #E62117;
+	}
+	.slz-list-block .social-list .item:hover .flickr,
+	.social-list .item:hover .flickr {
+		color: #FF0084;
+	}
+	.slz-list-block .social-list .item:hover .rss,
+	.social-list .item:hover .rss {
+		color: #F36F24;
+	}
+	.slz-list-block .social-list .item:hover .delicious,
+	.social-list .item:hover .delicious {
+		color: #2A96FF;
+	}
+	.slz-list-block .social-list .item:hover .lastfm,
+	.social-list .item:hover .lastfm {
+		color: #B90000;
+	}
+	.slz-list-block .social-list .item:hover .tumblr,
+	.social-list .item:hover .tumblr {
+		color: #36465D;
+	}
+	.slz-list-block .social-list .item:hover .deviantart
+	.social-list .item:hover .deviantart {
+		color: #05CC47;
+	}
+	.slz-list-block .social-list .item:hover .git,
+	.social-list .item:hover .git {
+		color: #F34F29;
+	}
+	.slz-list-block .social-list .item:hover .instagram
+	.slz-list-block .social-list .item:hover .instagram {
+		color: #895A4D;
+	}
+	.slz-list-block .social-list .item:hover .soundcloud,
+	.social-list .item:hover .soundcloud {
+		color: #FF5500;
+	}
+	.slz-list-block .social-list .item:hover .stumbleupon,
+	..social-list .item:hover .stumbleupon {
+		color: #EB4924;
+	}
+	.slz-list-block .social-list .item:hover .behance,
+	.social-list .item:hover .behance {
+		color: #005CFF;
+	}
+	.slz-list-block .social-list .item:hover .tripadvisor,
+	.social-list .item:hover .tripadvisor {
+		color: #589442;
+	}
+	.slz-list-block .social-list .item:hover .vk,
+	.social-list .item:hover .vk {
+		color: #507299;
+	}
+	.slz-list-block .social-list .item:hover .foursquare,
+	.social-list .item:hover .foursquare {
+		color: #F94877;
+	}
+	.slz-list-block .social-list .item:hover .xing,
+	.social-list .item:hover .xing {
+		color: #ADD000;
+	}
+	.slz-list-block .social-list .item:hover .weibo,
+	.social-list .item:hover .weibo {
+		color: #E6162D;
+	}
+	.slz-list-block .social-list .item:hover .odnoklassniki,
+	.social-list .item:hover .odnoklassniki {
+		color: #F58220;
+	}
+
+/*----------  SC Single Team  ----------*/
+
+	.teams-detail-wrapper .block-wrapper {
+		text-align: center;
+	}
+
+	.teams-detail-wrapper .image-wrapper {
+		display: inline-block;
+		width: 270px;
+		height: 270px;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: #f7f3f3;
+		position: relative;
+		z-index: 1;
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+	}
+	.teams-detail-wrapper .image-wrapper:hover {
+		box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.15);
+	}
+	.teams-detail-wrapper .image-wrapper:before {
+		content: "";
+		display: block;
+		padding-top: 100%;
+	}
+	.teams-detail-wrapper .image-wrapper .img-responsive {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: auto;
+		max-width: initial;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+
+	.teams-detail-wrapper .content-wrapper {
+		display: block;
+		width: 100%;
+	}
+	.teams-detail-wrapper .content-wrapper .info-description {
+		margin-top: 20px;
+	}
+	.teams-detail-wrapper .content-wrapper .info-description a {
+		display: block;
+		margin-top: 5px;
+	}
+	.teams-detail-wrapper .content-wrapper .info-description a:first-child {
+		margin-top: 0px;
+	}
+	.teams-detail-wrapper .content-wrapper .info-description span {
+		font-weight: 600;
+		padding-right: 5px;
+	}
+
+	.teams-detail-wrapper .heading-wrapper {
+		margin-top: 10px;
+	}
+	.teams-detail-wrapper .heading-wrapper .name {
+		color: #333333;
+		font-size: 24px;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+	}
+	.teams-detail-wrapper .heading-wrapper .name:hover {
+		color: #cf4a46;
+	}
+	.teams-detail-wrapper .heading-wrapper .position {
+		color: #cf4a46;
+		font-size: 18px;
+		font-style: italic;
+		line-height: 1;
+		font-family: 'Crimson Text', serif;
+		font-weight: 400;
+	}
+
+    .teams-detail-wrapper .social-list {
+		padding-top: 0px;
+	    padding-bottom: 15px;
+	    position: relative;
+    }
+    .teams-detail-wrapper .social-list:before {
+    	content: "";
+    	position: absolute;
+    	bottom: 0;
+    	height: 1px;
+    	width: 375px;
+    	left: 50%;
+    	background-color: #e5e5e5;
+    	transform: translateX(-50%);
+    	-webkit-transform: translateX(-50%);
+    }
+	.teams-detail-wrapper .social-list li {
+		padding: 6px 20px;
+		display: inline-block;
+	}
+	.teams-detail-wrapper .social-list li a {
+		font-size: 16px;
+		color: #a9a9a9;
+	}
+	.teams-detail-wrapper .social-list li:hover a {
+		color: #cf4a46;
+	}
+
+	
+	
+
+/*----------  SC Team Carousel  ----------*/
+	.sc_team_carousel .slz-carousel-wrapper {
+		position: relative;
+	}
+	.sc_team_carousel .slz-carousel-wrapper .btn:focus {
+		outline: 0;
+	}
+	.sc_team_carousel .slz-carousel-wrapper .btn.slick-arrow:hover {
+		background-color: #ededed;
+		color: #333333;
+	}
+
+	.sc_team_carousel.layout-4 .slz-carousel-wrapper .btn {
+		display: none !important;
+	}
+
+	/* 	.slz-block-team-04 .social-list .social-item .slz-icon {
+		    font-size: 15px;
+		    line-height: 40px;
+		    width: 40px;
+		    height: 40px;
+		    background-color: #f5f4f4;
+		    color: #cf4a46;		
+	} */
+
+
+/*==================================
+=            Responsive            =
+==================================*/
+
+	@media screen and (max-width: 768px) {
+		.slz-block-team-01 .team-body:before,
+		.slz-block-team-02 .team-body:before {
+			content: none;
+		}
+		.slz-block-team-01 .team-body {
+			padding-bottom: 0;
+		}
+	}
+
+
+
+/*=====  End of Responsive  ======*/
+
+

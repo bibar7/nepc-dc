@@ -1,0 +1,217 @@
+/*
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary:
+ *
+ *    1. RESPONSIVE SCREEN
+ *        - 1.0. Responsive for layout boxed style
+ *        - 1.1. Media screen max width 1600px
+ *        - 1.2. Media screen max width 1024px
+ *        - 1.3. Media screen max width 991px
+ *        - 1.4. Media screen max width 768px
+ *        - 1.5. Media screen max width 767px
+ *        - 1.6. Media screen max width 600px
+ *        - 1.7. Media screen max width 480px
+ *        - 1.8. Media screen max width 414px
+ *        - 1.9. Media screen max width 380px
+ *        - 1.10. Media screen max width 320px
+ */
+
+
+
+/*=========================================
+=            RESPONSIVE SCREEN            =
+=========================================*/
+
+    /*----------  1.0. Responsive for layout boxed style  ----------*/
+
+        @media (min-width:992px) and (max-width:1023px) {
+            .body-wrapper.style-boxed {
+                width: auto!important
+            }
+            .body-wrapper.style-boxed .header-middle {
+                width: auto;
+            }
+        }
+
+        @media (min-width:1024px) and (max-width:1199px) {
+            .body-wrapper.style-boxed {
+                width: 1000px!important
+            }
+            .body-wrapper.style-boxed .header-middle {
+                width: 1000px;
+            }
+            .body-wrapper.style-boxed .container {
+                width: 100%
+            }
+        }
+
+        @media (min-width:1200px) {
+            .body-wrapper.style-boxed .container {
+                width: 100%
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+        	 /*boxed style*/
+            .body-wrapper.style-boxed {
+                width: auto!important
+            }
+
+            .body-wrapper.style-boxed .header-middle {
+                width: auto;
+            }
+        }
+
+    /*----------  1.1. Media screen max width 1600px  ----------*/
+    
+    /*----------  1.2. Media screen max width 1024px  ----------*/
+        @media screen and (max-width: 1024px) {
+            .slz-blockquote-02, .entry-content .slz-blockquote-02 {
+                font-size: 32px;
+            }
+        }
+    /*----------  1.3. Media screen max width 991px  ----------*/
+
+    /*----------  1.4. Media screen max width 768px  ----------*/
+        @media screen and (max-width: 768px) {
+            .slz-blockquote-02, .entry-content .slz-blockquote-02 {
+                font-size: 28px;
+            }
+        }
+
+    /*----------  1.5. Media screen max width 767px  ----------*/
+        @media screen and (max-width: 767px) {
+            .slz-blockquote-02, .entry-content .slz-blockquote-02 {
+                font-size: 26px;
+                margin-bottom: 0;
+            }
+            .slz-blockquote-02 cite {
+                font-size: 20px;
+            }
+
+            .slz-blockquote-02:before {
+                font-size: 80px;
+                line-height: 40px;
+            }
+
+            .slz-footer-quote {
+                padding: 60px 0;
+            }
+
+            .slz-footer-quote .slz-blockquote-01 p {
+                font-size: 28px;
+            }
+
+            .service-detail-wrapper > .title {
+                margin-bottom: 0;
+                font-size: 24px;
+            }
+
+            .service-detail-wrapper .entry-content h3 {
+                font-size: 20px;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            .padding-bottom-100 {
+                padding-bottom: 80px;
+            }
+
+            .padding-top-100 {
+                padding-top: 80px;
+            }
+        }
+
+    /*----------  1.6. Media screen max width 600px  ----------*/
+
+    /*----------  1.7. Media screen max width 480px  ----------*/
+        @media screen and (max-width: 480px) {
+            .slz-blockquote-02, .entry-content .slz-blockquote-02 {
+                font-size: 20px;
+            }
+            .slz-blockquote-02 cite,
+            .slz-blockquote-01 cite {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .slz-blockquote-02:before {
+                font-size: 60px;
+                line-height: 40px;
+            }
+
+            .slz-footer-quote {
+                padding: 40px 0;
+            }
+
+            .slz-footer-quote .slz-blockquote-01 p {
+                font-size: 24px;
+            }
+
+            .slz-footer-top .footer-top-wrapper >.slz-widget .textwidget {
+                font-size: 18px;
+                padding-right: 0;
+            }
+
+            .slz-block-item-01.portfolio-list .block-image + .block-content,
+            .slz-block-item-01 .block-image + .block-content {
+                padding-top: 20px;
+            }
+
+            .padding-bottom-100 {
+                padding-bottom: 60px;
+            }
+
+            .padding-top-100 {
+                padding-top: 60px;
+            }
+
+            .block-title {
+                font-size: 24px;
+            }
+
+            .slz-portfolio-content .block-image {
+                margin-top: 20px;
+            }
+
+            .slz-blog-author .media-right {
+                padding-left: 0;
+            }
+            .list-layout .slz-block-item-01.style-2 .block-info,
+            .slz-block-item-01 .block-title + .block-info,
+            .slz-block-item-01 .block-info +.block-text {
+                margin-top: 10px;
+            }
+
+            .slz-block-item-01 .block-info +.block-text {
+                margin-top: 15px;
+            }
+
+            .slz-block-item-01 .block-read-more {
+                margin-top: 15px;
+            }
+
+            .slz-isotope-grid .grid-item {
+                padding: 20px 10px;
+            }
+        }
+
+    /*----------  1.8. Media screen max width 414px  ----------*/
+
+    /*----------  1.9. Media screen max width 380px  ----------*/
+        @media screen and (max-width: 380px) {
+            .slz-blockquote-02, .entry-content .slz-blockquote-02 {
+                font-size: 18px;
+            }
+            .slz-blockquote-02 cite {
+                font-size: 16px;
+            }
+        }
+
+    /*----------  1.10. Media screen max width 320px  ----------*/
+
+/*=====  End of RESPONSIVE SCREEN  ======*/

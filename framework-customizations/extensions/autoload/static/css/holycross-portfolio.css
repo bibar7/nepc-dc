@@ -1,0 +1,812 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Portfolio Style 01
+ *		3. SC Portfolio Style 02
+ *		4. SC Portfolio Style 06
+ *		5. SC Single Portfolio
+ *		6. SC Portfolio categories carousel
+ *		Responsive
+ */ 
+
+
+
+/*----------  1. General  ----------*/
+	
+	.sc_portfolio_list .inline_block {
+        position: relative;
+        float: none;
+        margin-left: -3px;
+        left: 1.5px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .slz-block-item-01.portfolio-list .block-title {
+        font-size: 20px;
+    }
+    .slz-block-item-01.portfolio-list .block-text {
+        margin-top: 10px;
+    }
+    .slz-portfolio .tool-list li {
+        list-style: none;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background-color: #f5f4f4;
+        line-height: 48px;
+        border-radius: 100%;
+        transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        margin-bottom: 10px;
+    }
+    .slz-portfolio .tool-list li .link  {
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+    }
+    .slz-portfolio .tool-list li + li {
+        margin-left: 10px;
+    }
+    .slz-portfolio .tool-list li .link {
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: inline-block;
+        color: #CF4A46;
+    }
+    .slz-portfolio .tool-list li .link:hover{
+        background-color: #CF4A46;
+        color: #FFFFFF;
+    }
+    .sc_portfolio_list .portfolio-list.style-2 .block-image + .block-content{
+    	padding-left: 30px;
+    }
+
+/*----------  2. SC Portfolio Style 01  ----------*/
+	.slz-block-item-01.portfolio-list {
+		background-color: transparent;
+	}
+	.sc_portfolio_list .slz-carousel-wrapper .btn {
+		width: 48px;
+		height: 48px;
+		border-radius: 100%;
+		line-height: 44px;
+		background-color: transparent;
+		border:2px solid rgba(0, 0, 0,0.18);
+		transition: all 0.6s ease;
+		-webkit-transition: all 0.6s ease;
+	}.sc_portfolio_list .slz-carousel-wrapper .btn:hover{
+		border-color: transparent;
+	}
+	.sc_portfolio_list .slz-carousel-wrapper .btn .icons {
+		font-size: 30px;
+		color: #cf4a46;
+	}
+	.sc_portfolio_list .slz-carousel-wrapper .btn:hover .icons {
+		color: #FFFFFF;
+	}
+
+	.slz-carousel-wrapper .slz-block-item-01.portfolio-list {
+		background-color: transparent;
+	}
+
+	.slz-block-item-01.portfolio-list .block-title {
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.slz-block-item-01.portfolio-list .block-info +.block-text {
+		margin-top: 20px;
+	}
+	.slz-block-item-01.portfolio-list .block-text {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+		color: #555555;
+	}
+
+	.slz-block-item-01.portfolio-list .block-title + .block-info {
+		margin-top: 20px;
+		padding: 0;
+	}
+	.slz-block-item-01.portfolio-list .block-info a {
+		letter-spacing: 0;
+	}
+	.slz-block-item-01.portfolio-list .block-info .text,
+	.slz-block-item-01.portfolio-list .block-info .block-date {
+		color: #cf4a46;
+	}
+	.slz-block-item-01.portfolio-list .block-info a:hover .text,
+	.slz-block-item-01.portfolio-list .block-info .block-date:hover {
+		color: #333333;
+	}
+	.slz-block-item-01.portfolio-list .block-info .author-text {
+		color: #555555;
+	}
+	.slz-block-item-01.portfolio-list .block-info a:hover .author-text {
+		color: #cf4a46;
+	}
+	.slz-block-item-01.portfolio-list .block-info .title,
+	.slz-block-item-01.portfolio-list .block-info .author-label {
+		color: #888888;
+		padding-right: 5px;
+	}
+	.slz-block-item-01.portfolio-list .block-info li {
+		margin-right: 0;
+		margin-bottom: 15px;
+		display: block;
+		font-size: 18px;
+	}
+	.slz-block-item-01.portfolio-list .block-info li:after {
+		content: none;
+	}
+
+	.slz-block-item-01.portfolio-list .block-image + .block-content {
+		padding-top: 35px;
+	}
+
+	.slz-block-item-01.portfolio-list .tool-list {
+		padding: 0;
+		margin-top: 20px;
+	}
+	.slz-block-item-01.portfolio-list .block-read-more {
+		background-color: transparent;
+		margin-top: 15px;
+	}
+	.slz-block-item-01.portfolio-list .block-read-more i{
+		display: none;
+	}
+	.slz-block-item-01.portfolio-list {
+		background-color: transparent;
+	}
+	.slz-block-item-01.portfolio-list .block-category {
+		line-height: initial;
+	}
+
+/*----------  3. SC Portfolio Style 02  ----------*/
+	.portfolio-list.style-2 .block-title {
+		font-size: 24px;
+	}
+	.portfolio-list.style-2  .block-image + .block-content {
+		padding-top: 0;
+	}
+	.slz-block-item-01.portfolio-list .block-text + .tool-list {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+/*----------  SC Porfolio Style 03  ----------*/
+	 .slz-block-item-03 {
+        font-size: 0;
+    }
+    .slz-block-item-03 .block-image,
+    .slz-block-item-03 .block-content,
+    .slz-block-item-03 .block-text {
+        font-size: 14px;
+    }
+    .slz-block-item-03 .block-image:before {
+        padding-top: 100%;
+    }
+    .slz-block-item-03 .block-content {
+        margin-top: 20px;
+    }    .slz-block-item-03 .block-text {
+        margin-top: 15px;
+    }
+    .slz-block-item-03 .block-content .block-title {
+        margin-bottom: 5px;
+    }
+    .slz-block-item-03 .block-content .ratings {
+        display: inline-block;
+        line-height: 24px;
+        vertical-align: top;
+        margin-right: 35px;
+        margin-bottom: 20px;
+    }
+    .slz-block-item-03 .block-content .block-read-more {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+    .slz-block-item-03 .block-content .ratings + .block-read-more {
+        margin-top: 0;
+    }
+    .slz-block-item-03 .block-content .ratings .star-rating,
+    .slz-block-item-03 .block-content .ratings .number {
+        display: inline-block;
+        vertical-align: top;
+        line-height: inherit;
+    }
+    .slz-block-item-03 .block-content .ratings .number { 
+        margin-left: 10px;
+    }
+    .slz-block-item-03 .block-content .block-category {
+        margin-bottom: 15px;
+    }
+    .slz-block-item-03.style-2 .block-image {
+        display: inline-block;
+        width: 170px;
+        vertical-align: top;
+    }
+    .slz-block-item-03.style-2 .block-content {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 170px);
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .slz-block-item-03.style-2 .block-image + .block-content {
+        padding-left: 25px;
+        padding-top: 5px;
+    }
+    .slz-block-item-03.style-2 .block-text {
+        margin-top: 20px;
+    }
+    .slz-block-item-03 .link-preview {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        bottom: -50px;
+        text-align: center;
+        color: #fff;
+        padding: 1px 6px;
+        text-transform: capitalize;
+        background-color: #ccc;
+    }
+    .slz-block-item-03:hover .link-preview {
+        bottom: 0;
+    }
+    .slz-block-item-03 .block-content .block-category,
+    .slz-block-item-04 .block-content .block-category {
+        text-transform: capitalize;
+        position: relative;
+        font-weight: 400;
+        font-size: 15px;
+        color: #989b9f;
+        margin: 0 0 10px 0;
+        vertical-align: top;
+    }
+/*----------  1.3 Portfolio layout 3  ----------*/
+    .slz-block-item-04 .block-text {
+        margin-top: 15px;
+    }
+    .slz-block-item-04 .block-image:before {
+        padding-top: 110%;
+    }
+    .slz-block-item-04 .block-image-wrapper {
+        position: relative;
+    }
+    .slz-block-item-04 .block-image {
+        margin-bottom: 30px;
+    }
+    .slz-block-item-04 .block-content {
+        padding: 25px;
+    }
+    .slz-block-item-04 .block-sub-image-wrapper {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        z-index: 3;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .slz-block-item-04 .block-content .block-title {
+        margin-bottom: 5px;
+    }
+    .slz-block-item-04 .block-content .ratings {
+        display: inline-block;
+        line-height: 24px;
+        vertical-align: top;
+    }
+    .slz-block-item-04 .block-content .block-read-more {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+    }
+    .slz-block-item-04 .block-content .ratings + .block-read-more {
+        margin-left: 35px;
+        margin-top: 0;
+    }
+    .slz-block-item-04 .block-content .ratings .star-rating,
+    .slz-block-item-04 .block-content .ratings .number {
+        display: inline-block;
+        vertical-align: top;
+        line-height: inherit;
+    }
+    .slz-block-item-04 .block-content .ratings .number { 
+        margin-left: 10px;
+    }
+    .slz-block-item-04 .block-content .block-category {
+        margin-bottom: 10px;
+    }
+
+/*----------  4. SC Portfolio Style 06  ----------*/
+	.portfolio-list.style-6 {
+	    position: relative;
+	    box-shadow: none;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none
+	}
+
+	.portfolio-list.style-6:before {
+	    content: "";
+	    display: table
+	}
+
+	.portfolio-list.style-6:after {
+	    content: "";
+	    display: table;
+	    clear: both
+	}
+
+	.portfolio-list.style-6 .block-image:before {
+	    padding-top: 63.2%
+	}
+
+	.portfolio-list.style-6 .block-image + .block-content {
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    max-height: 66.2%;
+	    overflow: hidden;
+	    z-index: 5;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%)
+	}
+
+	.portfolio-list.style-6 .block-content .block-text {
+	}
+
+	.portfolio-list.style-6 .tool-list {
+	    display: block;
+	    text-align: center
+	}
+
+	.portfolio-list.style-6 .tool-list li {
+	    display: inline-block;
+	    margin-left: 5px;
+		margin-right: 5px;
+	}
+	.portfolio-list.style-6 .tool-list li + li {
+		margin-left: 5px;
+	}
+	.portfolio-list.style-6 .tool-list li .link {
+	    display: block;
+	    width: 48px;
+	    height: 48px;
+	    line-height: 48px;
+	    border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    background-color: #ffffff;
+	}
+	.portfolio-list.style-6 .tool-list li:hover .link{
+		background-color: #CF4A46;
+		color: #FFFFFF;
+	}
+
+	.portfolio-list.style-6.has-image .block-image {
+	    margin-bottom: 100px
+	}
+	.portfolio-list.style-6 .block-content {
+		position: relative;
+	    margin: auto;
+	    text-align: center;
+	    background-color: #FBFBFB;
+		width: 100%;
+		padding: 60px 50px;
+		border-bottom: 3px solid #cf4a46;
+		-webkit-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+		box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+	}
+	
+	.portfolio-list.style-6 .block-image + .block-content {
+		width: calc(100% - 200px);
+		padding: 60px 50px;
+		border-bottom: 3px solid #cf4a46;
+		-webkit-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+		box-shadow: 0px 5px 29px 0px rgba(0,0,0,0.08);
+	}
+	
+	.portfolio-list.style-6 .block-title {
+		font-size: 24px;
+	}
+
+	.portfolio-list.style-6 .block-title + .block-info {
+		margin-top: 33px;
+	}
+	.portfolio-list.style-6 .block-info li {
+		display: inline-block;
+		position: relative;
+		margin-bottom: 0;
+	}
+	.portfolio-list.style-6 .block-info li {
+		padding-right: 40px;
+	}
+	.portfolio-list.style-6 .block-info li:after {
+	    content: "/";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: auto;
+	    right: 15px;
+	    color: rgba(136, 136, 136, 0.5);
+	}
+	.portfolio-list.style-6 .block-info li:last-child {
+		padding-right: 0;
+	}
+	.portfolio-list.style-6 .block-info li:last-child:after {
+		content: none;
+	}
+
+	.portfolio-list.style-6 .block-info +.block-text {
+		margin-top: 26px;
+		text-align: left;
+	}
+
+	
+/*---------- 5. SC Single Portfolio  ----------*/
+	.slz-portfolio-content .block-info{
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	.slz-portfolio-content .block-info {
+		font-family: 'Crimson Text', serif;
+	}
+	.slz-portfolio-content .block-info .block-category {
+	    line-height: initial;
+	    letter-spacing: initial;
+	    font-size: 18px;
+	    font-style: italic;
+	    font-weight: 400;
+	    color: #CF4A46;
+	}
+	.slz-portfolio-content .block-info .block-category:hover{
+		color: #555555;
+	}
+	.slz-portfolio-content .block-info .author-label,
+	.slz-portfolio-content .block-info .title {
+		color: #888888;
+		font-style: italic;
+		padding-right: 5px;
+	}
+	
+	.slz-portfolio-content .block-info .block-date{
+		color: #cf4a46;
+	}
+	.slz-portfolio-content .block-info .author-text{
+		color: #555555;
+	}
+	.slz-portfolio-content .block-image {
+		margin-top: 40px;
+	}
+
+	.slz-portfolio .project-detail-wrapper + .slz-project-footer {
+		margin-top: 45px;
+	}
+
+	.slz-portfolio .slz-portfolio-content + .tool-list {
+		padding-left: 0;
+	    margin-top: 50px;
+	    margin-bottom: 40px;
+	    display: inline-block;
+	}
+
+	.slz-portfolio .slz-social-share {
+		display: inline-block;
+		height: 48px;
+		margin-top: 50px;
+		float: right;
+		line-height: 48px;
+	}
+	.slz-portfolio .slz-social-share .title {
+		margin-right: 5px;
+		line-height: 50px;
+	}
+	.slz-portfolio .slz-social-share .icons {
+		padding: 0px 14px;
+		font-size: 16px;
+	}
+	.slz-portfolio .slz-social-share .link:hover .icons {
+		color: #cf4a46;
+	}
+	.slz-portfolio .slz-social-share .link:last-child .icons {
+		padding-right: 0;
+	}
+
+	.slz-portfolio blockquote {
+		padding: 30px 50px;
+		padding-bottom: 20px;
+	}
+	.slz-portfolio blockquote p {
+		margin: 0;
+	}
+	.slz-portfolio blockquote p:last-child {
+		margin-top: 5px;
+	}
+
+
+
+/*----------  6. SC Portfolio categories carousel  ----------*/
+
+	 .portfolio_slide_slick {
+        font-size: 0;
+    }
+    .portfolio_slide_slick .feature-image {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .portfolio_slide_slick .slz-block-item-03.portfolio-item {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .portfolio_slide_slick .feature-image + .slz-block-item-03.portfolio-item {
+        width: 60%;
+        padding-left: 100px;
+    }
+
+	.sc_project_category .slz-counter-item-1 .content-cell {
+		position: relative;
+	}
+	.sc_project_category .slz-counter-item-1 .content-cell a {
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		pointer-events: none;
+	}
+	
+	.sc_project_category .slz-carousel-wrapper .slick-dots li {
+		margin: 0;
+	}
+	.sc_project_category .slz-carousel-wrapper .slick-dots li button:before {
+		font-size: 10px;
+	}
+
+	.sc_project_category .slz-counter-item-1 .content-cell .title {
+	    font-family: 'Crimson Text', serif;
+	    color: #888888;
+	    font-style: italic;
+	    font-size: 18px;
+	    font-weight: 300;
+	}
+	.sc_project_category .slz-counter-item-1 .content-cell .number {
+		color: #cf4a46;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+	}
+
+	.sc_project_category .slz-carousel-wrapper .btn {
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		color: #cf4a46;
+		background-color: #f5f4f4;
+		border-radius: 100%;
+	}
+	.sc_project_category .slz-carousel-wrapper .btn .icons {
+		font-size: 25px;
+	}
+
+	/*----------  1.5 Portfolio category  ----------*/
+    .sc_project_category .slz-counter-item-1 {
+        color: #666c72;
+        text-align: center;
+    }
+    .sc_project_category .slz-counter-item-1 .wrapper-icon {
+        font-size: 60px;
+    }
+    .sc_project_category .slz-counter-item-1 .icon-cell {
+        display: block;
+        text-align: center;
+    }
+    .sc_project_category .slz-counter-item-1 .icon-cell + .content-cell {
+        margin-top: 15px;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell {
+        display: block;
+        text-align: center;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell .number {
+        line-height: 1;
+        font-size: 40px;
+        font-weight: 600;
+        color: #213047;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell .title:last-child {
+        margin-bottom: 0;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell .description {
+        margin-bottom: 10px;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell .description:last-child {
+        margin-bottom: 0;
+    }
+    .sc_project_category .slz-counter-item-1 .content-cell + .icon-cell {
+        margin-top: 15px;
+    }
+
+	
+
+/*======================================
+=            Responsive                =
+=======================================*/
+
+    @media screen and (max-width: 1024px) {
+    	.sc_portfolio_list .slz-carousel-wrapper .btn {
+    		display: none!important;
+    	}
+    }
+
+    @media (min-width: 768px) and (max-width: 1018px) {
+    }
+
+    @media screen and (max-width: 768px) {
+    }
+
+    @media screen and (max-width: 767px) {
+		.portfolio-list.style-6 .block-content,
+		.portfolio-list.style-6 .block-image + .block-content {
+			padding: 40px 30px;
+			padding-bottom: 30px;
+		}
+		.portfolio-list.style-6 .block-title + .block-info,
+		.portfolio-list.style-6 .block-info +.block-text {
+			margin-top: 20px;
+		}
+		.slz-block-item-01.portfolio-list .block-text + .tool-list {
+			margin-top: 25px;
+		}
+
+		
+		.slz-portfolio .slz-portfolio-content + .tool-list {
+			margin-top: 30px;
+			margin-bottom: 0;
+		}
+
+    }
+
+    @media screen and (max-width: 600px) {
+    	.portfolio-list.style-6.has-image .block-image {
+    		margin-bottom: 0;
+    	}
+    	.portfolio-list.style-6 .block-content, 
+    	.portfolio-list.style-6 .block-image + .block-content {
+			padding: 30px 15px;
+			padding-bottom: 20px;
+    	}
+		.portfolio-list.style-6 .block-image + .block-content {
+			position: relative;
+			width: 100%;
+		}
+
+		.portfolio-list.style-6 .block-info li {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.portfolio-list.style-6 .block-info li {
+			padding-right: 0;
+		}
+		.portfolio-list.style-6 .block-info li:after {
+			content: none;
+		}
+
+		.slz-portfolio-content .block-info li {
+			display: block;
+			margin: 0;
+		}
+		.slz-portfolio-content .block-info li + li {
+			margin-top: 15px;
+		}
+		.slz-portfolio-content .block-info li:after {
+			content: none;
+		}
+		.sc_portfolio_list .slz-block-item-01.portfolio-list .block-image{
+			display: block;
+			width: 100%;
+			float: none;
+		}
+		.sc_portfolio_list .slz-block-item-01.portfolio-list .block-content {
+			display: block;
+			width: 100%;
+			float: none;
+			text-align: left;
+		}
+		.sc_portfolio_list .slz-block-item-01.portfolio-list {
+			display: block;
+			width: 100%;
+		}
+		.sc_portfolio_list .portfolio-list.style-2 .block-image + .block-content{
+			padding-left: 0px;
+			padding-top: 30px;
+		}
+		.portfolio-list.style-6 .block-title{
+			display: block;
+		}
+		.portfolio-list.style-6 .block-info,
+		.portfolio-list.style-6 .block-title {
+			text-align: left;
+		}
+
+    }
+
+    @media screen and (max-width: 480px) {
+    	.portfolio-list.style-6 .block-title {
+    		font-size: 20px;
+    	}
+
+		
+		.slz-portfolio .slz-portfolio-content + .tool-list {
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.slz-portfolio .slz-social-share {
+			float: initial;
+			margin-top: 0;
+		}
+		.slz-portfolio blockquote {
+			padding: 20px;
+			padding-bottom: 10px;
+		}
+		.slz-portfolio blockquote p {
+			font-size: 26px;
+		}
+		.portfolio-list.style-2 .block-title {
+			font-size: 20px;
+		}
+		.slz-block-item-01.portfolio-list .block-text {
+			font-size: 15px;
+		}
+		.slz-block-item-01.portfolio-list .block-info li {
+    		font-size: 16px;
+    	}
+    }
+
+    @media screen and (max-width: 414px) {
+    	.slz-portfolio blockquote p {
+    		font-size: 22px;
+    	}
+    }
+    
+    @media screen and (max-width: 380px) {
+		.slz-block-item-01 .block-info li a {
+		    font-size: 16px;
+		}
+		.sc_portfolio_list .slz-carousel-wrapper .slick-list {
+			padding-bottom: 5px;
+		}
+
+
+    }
+
+
+/*=========  End of Responsive  =======*/

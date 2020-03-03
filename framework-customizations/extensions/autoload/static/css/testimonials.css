@@ -1,0 +1,918 @@
+/*
+*  STYLE DEFAULT TESTIMONIAL
+*
+*
+*  [Table of contents]
+*
+*  [&. Content / #key]
+*  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+*
+*  Summary:
+*
+*
+*  0. General
+*  1. Testimonial Layout 1
+*  2. Testimonial Layout 2
+*  3. Testimonial Layout 3
+*  4. Testimonial Layout 4
+*  5. Testimonial Layout 5
+*  6. Testimonial Layout 6
+*  n. Responsive 
+*
+*
+*/
+
+
+/*====================================
+=            1.0 Variable            =
+====================================*/
+
+    .slz-testimonial {
+        cursor: pointer;
+    }
+
+    .slz-testimonial.show-quote .icon-quote {
+        display: block;
+        height: 50px;
+        position: relative;
+    }
+
+    .slz-testimonial.show-quote .icon-quote:before {
+        content: "\275D";
+        font-size: 70px;
+        color: #da0f32;
+        line-height: 1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    .slz-testimonial .name {
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .slz-testimonial .position {
+        font-weight: 400;
+        font-size: 14px;
+        display: block;
+    }
+
+    .slz-testimonial .description {
+        display: block;
+    }
+
+    .slz-testimonial .ratings {
+        margin-top: 5px;
+    }
+
+    .slz-testimonial.text-r .name,
+    .slz-testimonial.text-r .ratings {
+        transform: translateX(7px);
+        -webkit-transform: translateX(7px);
+    }
+
+    .slz-testimonial.text-l .name,
+    .slz-testimonial.text-l .ratings {
+        transform: translateX(-7px);
+        -webkit-transform: translateX(-7px);
+    }
+
+    .slz-testimonial .img-wrapper {
+        width: 80px;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+        display: inline-block;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    }
+
+    .slz-testimonial .img-wrapper:before {
+        display: block;
+        content: '';
+        padding-top: 100%;
+    }
+
+    .slz-testimonial .img-wrapper img {
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 100%;
+        max-width: none;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .sc_testimonial .slz-carousel-wrapper .btn {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sc_testimonial .slz-carousel-wrapper .btn-prev {
+        left: -50px;
+    }
+
+    .sc_testimonial .slz-carousel-wrapper .btn-next {
+        right: -50px;
+        left: auto;
+    }
+
+/*=====  End of 1.0 Variable  ======*/
+
+
+/*================================================
+=            2.0 Layout United States            =
+================================================*/
+
+    /*----------  2.1 Style Florida  -----------*/
+
+        .slz-testimonial.st-florida .description {
+            margin-bottom: 30px;
+        }
+
+        .slz-testimonial.st-florida .img-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .slz-testimonial.st-florida .name,
+        .slz-testimonial.st-florida .position,
+        .slz-testimonial.st-florida .ratings {
+            display: inline-block;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+        }
+
+        .slz-testimonial.st-florida .name + .position:before {
+            content: "/";
+            color: inherit;
+            font-size: 10px;
+            margin-left: 6px;
+            margin-right: 8px;
+            position: relative;
+        }
+
+        .slz-testimonial.text-l.st-florida .icon-quote:before {
+            left: 0;
+            transform: none;
+        }
+        .slz-testimonial.text-r.st-florida .icon-quote:before {
+            left: initial;
+            right: 0;
+            transform: none;
+        }
+
+    /*----------  2.2 Style California  --------*/
+
+        .slz-testimonial.st-california {
+            position: relative;
+            padding: 30px;
+            margin: 6px 0;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .slz-testimonial.text-r.st-california {
+            direction: rtl;
+        }
+        .slz-testimonial.text-r.st-california .description,
+        .slz-testimonial.text-r.st-california .img-wrapper,
+        .slz-testimonial.text-r.st-california .wrapper-info{
+            direction: ltr;
+        }
+
+        .slz-testimonial.st-california .description {
+            margin-bottom: 30px;
+            /* position: relative; */
+        }
+
+        .slz-testimonial.st-california .img-wrapper,
+        .slz-testimonial.st-california .wrapper-info {
+            display: inline-block;
+        }
+
+        .slz-testimonial.st-california .img-wrapper + .wrapper-info {
+            max-width: calc(100% - 85px);
+            padding-left: 15px;
+        }
+
+        .slz-testimonial.text-r.st-california .img-wrapper + .wrapper-info {
+            padding-left: 0px;
+            padding-right: 15px;
+        }
+
+        .slz-testimonial.st-california.show-quote .icon-quote {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            height: 55px;
+            width: 75px;
+            opacity: 0.5;
+        }
+        .slz-testimonial.st-california.show-quote .icon-quote:before {
+            font-size: 150px;
+            position: relative;
+            left: initial;
+            transform: none;
+        }
+
+        
+
+    /*----------  2.3 Style Georgia  -----------*/
+        .slz-testimonial.st-georgia .description {
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+            position: relative;
+        }
+
+        .slz-testimonial.text-r.st-georgia {
+            direction: rtl;
+        }
+
+        .slz-testimonial.text-r.st-georgia .description,
+        .slz-testimonial.text-r.st-georgia .img-wrapper,
+        .slz-testimonial.text-r.st-georgia .wrapper-info {
+            direction: ltr;
+        }
+
+        .slz-testimonial.st-georgia .description:before,
+        .slz-testimonial.st-georgia .description:after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 8px);
+            height: 1px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .slz-testimonial.st-georgia .description:before {
+            left: 0;
+        }
+
+        .slz-testimonial.st-georgia .description:after {
+            right: 0;
+        }
+
+        .slz-testimonial.st-georgia .description-arrow {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: -6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: none;
+            border-left: none;
+            left: calc(50% - 6px);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+
+        .slz-testimonial.text-l.st-georgia .description:before {
+            width: 35px;
+        }
+
+        .slz-testimonial.text-l.st-georgia .description:after {
+            width: calc(100% - 51px);
+        }
+
+        .slz-testimonial.text-l.st-georgia .description-arrow {
+            left: 37px;
+        }
+
+        .slz-testimonial.text-r.st-georgia .description:before {
+            width: calc(100% - 51px);
+        }
+
+        .slz-testimonial.text-r.st-georgia .description:after {
+            width: 35px;
+        }
+
+        .slz-testimonial.text-r.st-georgia .description-arrow {
+            left: initial;
+            right: 37px;
+        }
+
+        .slz-testimonial.st-georgia .img-wrapper,
+        .slz-testimonial.st-georgia .wrapper-info {
+            display: inline-block;
+        }
+
+        .slz-testimonial.st-georgia .wrapper-info {
+            max-width: calc(100% - 85px);
+            padding-left: 15px;
+        }
+
+        .slz-testimonial.text-r.st-georgia .wrapper-info {
+            padding-left: 0px;
+            padding-right: 15px;
+        }
+
+        .slz-testimonial.st-georgia.show-quote .description {
+            padding-top: 15px;
+        }
+
+        .slz-testimonial.st-georgia.show-quote .icon-quote {
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            margin-right: 5px;
+            vertical-align: bottom;
+        }
+
+        .slz-testimonial.st-georgia.show-quote .content {
+            display: inline;
+        }
+
+
+/*=====  End of 2.0 Layout United States  ======*/
+
+
+/*===============================================
+=            3.0 Layout Idia                    =
+===============================================*/
+
+    /*----------  3.1 Style Chennai  ----------*/
+        .slz-testimonial.st-chennai .name,
+        .slz-testimonial.st-chennai .position,
+        .slz-testimonial.st-chennai .ratings {
+            display: inline-block;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+        }
+
+        .slz-testimonial.st-chennai .name + .position:before {
+            content: "/";
+            color: inherit;
+            font-size: 10px;
+            margin-left: 6px;
+            margin-right: 8px;
+            position: relative;
+        }
+
+        .slz-testimonial.st-chennai .img-wrapper {
+            margin-bottom: 30px;
+        }
+        .slz-testimonial.st-chennai .description {
+            margin-bottom: 15px;
+        }
+
+        .slz-testimonial.st-chennai.show-quote .img-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .slz-testimonial.text-l.st-chennai .icon-quote:before {
+            left: 0;
+            transform: none;
+        }
+
+        .slz-testimonial.text-r.st-chennai .icon-quote:before {
+            left: initial;
+            right: 0;
+            transform: none;
+        }
+
+    /*----------  3.2 Style Mumbai  -----------*/
+        .slz-testimonial.st-mumbai {
+            position: relative;
+            padding: 30px;
+            margin: 6px 0;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .slz-testimonial.text-r.st-mumbai {
+            direction: rtl;
+        }
+        .slz-testimonial.text-r.st-mumbai .description,
+        .slz-testimonial.text-r.st-mumbai .img-wrapper,
+        .slz-testimonial.text-r.st-mumbai .wrapper-info{
+            direction: ltr;
+        }
+        .slz-testimonial.st-mumbai .description {
+            margin-top: 30px;
+            /* position: relative; */
+        }
+
+        .slz-testimonial.st-mumbai .img-wrapper,
+        .slz-testimonial.st-mumbai .wrapper-info {
+            display: inline-block;
+        }
+
+        .slz-testimonial.st-mumbai .wrapper-info {
+            max-width: calc(100% - 85px);
+            padding-left: 15px;
+        }
+        .slz-testimonial.text-r.st-mumbai .wrapper-info {
+            padding-left: 0px;
+            padding-right: 15px;
+        }
+
+        .slz-testimonial.st-mumbai.show-quote .icon-quote {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            height: 55px;
+            width: 75px;
+            opacity: 0.5;
+        }
+        .slz-testimonial.st-mumbai.show-quote .icon-quote:before {
+            font-size: 150px;
+            position: relative;
+            left: initial;
+            transform: none;
+        }
+
+    /*----------  3.3 Style Pune  -------------*/
+        .slz-testimonial.st-pune .description {
+            margin-top: 30px;
+            padding: 30px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: none;
+            position: relative;
+        }
+        .slz-testimonial.text-r.st-pune {
+            direction: rtl;
+        }
+        .slz-testimonial.text-r.st-pune .description,
+        .slz-testimonial.text-r.st-pune .img-wrapper,
+        .slz-testimonial.text-r.st-pune .wrapper-info{
+            direction: ltr;
+        }
+        .slz-testimonial.st-pune .description:before,
+        .slz-testimonial.st-pune .description:after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 8px);
+            height: 1px;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .slz-testimonial.st-pune .description:before {
+            left: 0;
+        }
+        .slz-testimonial.st-pune .description:after {
+            right: 0;
+        }
+        .slz-testimonial.st-pune .description-arrow {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: -6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+            border-right: none;
+            left: calc(50% - 6px);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+
+        .slz-testimonial.text-l.st-pune .description:before {
+            width: 35px;
+        }
+        .slz-testimonial.text-l.st-pune .description:after {
+            width: calc(100% - 51px);
+        }
+        .slz-testimonial.text-l.st-pune .description-arrow {
+            left: 37px;
+        }
+
+        .slz-testimonial.text-r.st-pune .description:before {
+            width: calc(100% - 51px);
+        }
+        .slz-testimonial.text-r.st-pune .description:after {
+            width: 35px;
+        }
+        .slz-testimonial.text-r.st-pune .description-arrow {
+            left: initial;
+            right: 37px;
+        }
+
+        .slz-testimonial.st-pune .img-wrapper {
+            display: inline-block;
+        }
+        .slz-testimonial.st-pune .wrapper-info {
+            display: inline-block;
+        }
+        .slz-testimonial.st-pune .img-wrapper + .wrapper-info {
+            max-width: calc(100% - 85px);
+            padding-left: 15px;
+        }
+        .slz-testimonial.text-r.st-pune .img-wrapper + .wrapper-info {
+            padding-left: 0px;
+            padding-right: 15px;
+        }
+
+        .slz-testimonial.st-pune.show-quote .description {
+            padding-top: 15px;
+        }
+        .slz-testimonial.st-pune.show-quote .icon-quote {
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            margin-right: 5px;
+            vertical-align: bottom;
+        }
+        .slz-testimonial.st-pune.show-quote .content {
+            display: inline;
+        }
+
+/*=====  End of 3.0 Layout Idia  ==============*/
+
+
+/*===============================================
+=            4.0 Layout United Kingdom          =
+===============================================*/
+
+    /*----------  4.1 Style London  -----------*/
+        .sc_testimonial.la-united-kingdom .slider-nav {
+            margin-top: 40px;
+        }
+
+        .la-united-kingdom .slz-testimonial .description {
+            text-align: center;
+        }
+
+        .la-united-kingdom .slz-testimonial .img-wrapper,
+        .la-united-kingdom .slz-testimonial .wrapper-info{
+            display: inline-block;
+        }
+
+        .la-united-kingdom .slz-testimonial .wrapper-info {
+            max-width: calc(100% - 85px);
+            padding-left: 15px;
+        }
+
+        .la-united-kingdom .slz-testimonial .name, 
+        .la-united-kingdom .slz-testimonial .ratings {
+            transform: translateX(-7px);
+            -webkit-transform: translateX(-7px);
+        }
+
+        .sc_testimonial.la-united-kingdom .slider-nav .item {
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        .sc_testimonial.la-united-kingdom .slider-nav .item.slick-current {
+            opacity: 1;
+        }
+        
+    /*----------  4.2 Style Harrogate  --------*/
+        .slz-testimonial.st-harrogate .description {
+            margin-bottom: 10px;
+            padding: 30px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+            position: relative;
+        }
+        .slz-testimonial.st-harrogate.show-quote .description {
+            padding-top: 15px;
+        }
+
+        .slz-testimonial.st-harrogate .description:before,
+        .slz-testimonial.st-harrogate .description:after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 8px);
+            height: 1px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .slz-testimonial.st-harrogate  .description:before {
+            left: 0;
+        }
+        .slz-testimonial.st-harrogate  .description:after {
+            right: 0;
+        }
+        .slz-testimonial.st-harrogate  .description-arrow {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: -6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: none;
+            border-left: none;
+            left: calc(50% - 6px);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+/*=====  End of 4.0 Layout United Kingdom  ====*/
+
+
+/*===============================================
+=            5.0 Layout Italy                   =
+===============================================*/
+
+    /*----------  5.1 Style Milan  ------------*/
+        
+        .la-italy.sc_testimonial .slider-nav {
+            margin-top: 30px;
+        }
+
+        .sc_testimonial.la-italy .slz-testimonial .description {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .sc_testimonial.la-italy .slider-nav {
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sc_testimonial.la-italy .slider-nav .item {
+            padding-left: 5px;
+            padding-right: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .sc_testimonial.la-italy .slider-nav .item {
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+
+        .sc_testimonial.la-italy .slider-nav .item.slick-current {
+            opacity: 1;
+        }
+
+        .la-italy .slz-testimonial .img-wrapper {
+            width: 100%;
+        }
+
+        .la-italy .slz-testimonial .name,
+        .la-italy .slz-testimonial .position {
+            display: inline-block;
+        }
+
+        .la-italy .slz-testimonial .name + .position:before {
+            content: "/";
+            color: inherit;
+            font-size: 10px;
+            margin-left: 6px;
+            margin-right: 8px;
+            position: relative;
+        }
+        
+    /*----------  5.1 Style Rome  -------------*/
+        .sc_testimonial .slider-for .slz-testimonial.st-rome {
+            margin-bottom: 10px;
+            padding: 30px 20px 15px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+            position: relative;
+        }
+        .sc_testimonial .slider-for .slz-testimonial.st-rome.show-quote {
+            padding-top: 15px;
+        }
+
+        .sc_testimonial .slider-for .slz-testimonial.st-rome:before,
+        .sc_testimonial .slider-for .slz-testimonial.st-rome:after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 8px);
+            height: 1px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .sc_testimonial .slider-for .slz-testimonial.st-rome:before {
+            left: 0;
+        }
+
+        .sc_testimonial .slider-for .slz-testimonial.st-rome:after {
+            right: 0;
+        }
+
+        .sc_testimonial .slider-for .slz-testimonial.st-rome .description-arrow {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: -6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: none;
+            border-left: none;
+            left: calc(50% - 6px);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+/*=====  End of 5.0 Layout Italy  =============*/
+
+
+/*===============================================
+=            6.0 Layout Turkey                  =
+===============================================*/
+    
+    /*---------  6.1 Style Istanbul  ----------*/
+        
+        .la-turkey .slider-nav {
+            width: 110px;
+            display: inline-block;
+        }
+        .la-turkey .slider-nav .item {
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+        .la-turkey .slider-nav .item.slick-current {
+            opacity: 1;
+        }
+        .la-turkey .slider-nav .slz-testimonial {
+            padding-bottom: 15px;
+        }
+        
+
+        .la-turkey .slider-for {
+            width: calc(100% - 115px);
+            display: inline-block;
+            vertical-align: top;    
+        }
+         .la-turkey .slider-for .item {
+            padding-left: 5px;
+         }
+        
+        .la-turkey .slider-for .slz-testimonial {
+            text-align: left;
+        }
+
+        .la-turkey .slider-for .slz-testimonial .name,
+        .la-turkey .slider-for .slz-testimonial .position {
+            display: inline-block;
+        }
+        .la-turkey .slider-for .slz-testimonial .name,
+        .la-turkey .slider-for .slz-testimonial .ratings {
+            transform: none;
+        }
+
+        .la-turkey .slider-for .slz-testimonial .name + .position:before {
+            content: "/";
+            color: inherit;
+            font-size: 10px;
+            margin-left: 6px;
+            margin-right: 8px;
+            position: relative;
+        }
+
+        .la-turkey .slider-for .slz-testimonial .description + .wrapper-info {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .la-turkey .slider-for .slz-testimonial.show-quote .description + .wrapper-info {
+            width: calc(100% - 35px);
+            padding-left: 20px;
+            float: right;
+        }
+        
+        .la-turkey .slider-for .slz-testimonial.show-quote .icon-quote {
+            float: left;
+            width: 35px;
+        }
+        .la-turkey .slider-for .slz-testimonial.show-quote .content {
+            display: inline-block;
+            width: calc(100% - 35px);
+            padding-left: 20px;
+        }
+
+/*=====  End of 6.0 Layout Turkey  ============*/
+
+
+/*=====================================
+=            n. Responsive            =
+=====================================*/
+
+
+    @media screen and (max-width: 991px) {
+        
+        .slz-testimonial.st-harrogate .description:before {
+            width: 60%;
+        }
+        .slz-testimonial.st-harrogate .description:after {
+            width: calc(40% - 16px);
+        }
+        .slz-testimonial.st-harrogate  .description-arrow {
+            left: calc(60% + 2px);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .slz-testimonial.st-california,
+        .slz-testimonial.st-mumbai {
+            padding: 15px;
+        }
+
+        .slz-testimonial.st-georgia .description,
+        .slz-testimonial.st-pune .description {
+            padding: 20px 15px;
+        }
+
+        .sc_testimonial.la-italy .slider-for .item {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .sc_testimonial.la-united-kingdom .slider-for,
+        .sc_testimonial.la-united-states,
+        .sc_testimonial.la-india .slz-carousel-wrapper {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .sc_testimonial.la-united-kingdom .slider-nav .slz-testimonial {
+            text-align: center;
+        }
+
+        .la-turkey .slider-nav .slz-testimonial {
+            text-align: center;
+        }
+        .la-turkey .slider-nav {
+            max-width: 270px;
+            height: 80px;
+            width: initial;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .la-turkey .slider-nav .item {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .la-turkey .slider-for {
+            width: 100%;
+            min-height: initial;
+        }
+        .la-turkey .slider-for .item {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .slz-testimonial.st-harrogate .description {
+            padding: 30px 15px;
+        }
+        .slz-testimonial.st-harrogate .description:before {
+            width: 30px;
+        }
+        .slz-testimonial.st-harrogate .description:after {
+            width: calc(100% - 46px);
+        }
+        .slz-testimonial.st-harrogate  .description-arrow {
+            left: calc(30px + 2px);
+        }
+        .sc_testimonial.la-united-kingdom .slider-nav .item {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .la-turkey .slider-for {
+            margin-top: 30px;
+        }
+        .la-turkey .slider-for .slz-testimonial.show-quote .content {
+            padding-left: 15px;
+        }
+        .la-turkey .slider-for .slz-testimonial .description + .wrapper-info {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+        .sc_testimonial .slider-for .slz-testimonial.st-rome {
+            padding: 30px 15px 15px 15px;
+        }
+
+    }
+
+
+/*=====  End of n. Responsive  ======*/

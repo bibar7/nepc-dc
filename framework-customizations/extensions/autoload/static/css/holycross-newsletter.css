@@ -1,0 +1,162 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary: Widgets
+ *
+ *		1. General
+ *		2. SC Newsletter style 01
+ *		3. SC Newsletter style 02
+ *		Responsive
+ */ 
+
+ /*----------  1. General  ----------*/
+
+ 	.sc_newsletter .slz-shortcode-send-mail .form-control {
+ 		width: calc(100% - 60px);
+ 	}
+ 	.sc_newsletter.has-name .slz-shortcode-send-mail .form-control {
+ 		width: calc(50% - 35px);
+ 	}
+	.slz-shortcode-send-mail .form-control {
+		margin-right: 10px;
+		border: 2px solid #ededed;
+	}
+
+	.sc-newslettter-title, .entry-content .sc_newsletter .slz-title-shortcode {
+		margin: 0;
+	    font-size: 16px;
+	    color: #333333;
+	    font-family: 'Poppins', sans-serif;
+	    font-weight: 600;
+	}
+	.sc-newslettter-des{
+		margin: 0;
+	    padding-top: 15px;
+	    padding-bottom: 25px;
+	    font-size: 16px;
+	    color: #555555;
+	    font-weight: 400;
+	    font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.sc_newsletter .slz-shortcode-send-mail2 .form-control {
+		height: auto;
+		padding-left: 17px;
+	}
+
+	.sc_newsletter .form-control {
+		height: 50px;
+		box-shadow: none;
+	    font-size: 14px;
+	    padding: 10px 20px;
+	}
+	.sc_newsletter .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #777777;
+		font-weight: 500;
+	}
+	.sc_newsletter .form-control::-moz-placeholder { /* Firefox 19+ */
+		color: #777777;
+		font-weight: 500;
+	}
+	.sc_newsletter .form-control:-ms-input-placeholder { /* IE 10+ */
+		color: #777777;
+		font-weight: 500;
+	}
+	.sc_newsletter .form-control:-moz-placeholder { /* Firefox 18- */
+		color: #777777;
+		font-weight: 500;
+	}
+
+	.slz-widget-send-mail .form-control + button[type="submit"], 
+	.slz-shortcode-send-mail .form-control + button[type="submit"] {
+		border-radius: 0;
+		background-color: #cf4a46;
+		border: 2px solid #cf4a46;
+		-webkit-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+		transition: all 0.6s ease;
+	}
+ /*----------  2. SC Newsletter style 01  ----------*/
+
+ /*----------  3. SC Newsletter style 02  ----------*/
+ 	.slz-shortcode-send-mail2 .slz-input-group{
+ 		display: block;
+ 		width: 100%;
+ 		border:none;
+ 	}
+ 	.slz-shortcode-send-mail2 .form-control {
+ 		display: block;
+ 		width: 100%;
+ 		border:2px solid #EDEDED;
+ 		border-radius: 2px;
+ 		-webkit-border-radius: 2px;
+ 		padding: 14px 20px;
+ 	}
+ 	.slz-shortcode-send-mail2 .input-group-button{
+ 		display: block;
+ 		width: auto;
+ 		white-space: normal;
+ 		left: auto;
+ 	}
+	.slz-shortcode-send-mail2 .form-control +.input-group-button,
+	.slz-shortcode-send-mail2 .form-control +.form-control{
+		margin-top: 15px;
+	}
+	.slz-shortcode-send-mail2 .sc-newsletter-btn{
+		text-transform: uppercase;
+		font-weight: 500;
+		font-family: 'Poppins', sans-serif;
+		font-size: 14px;
+		letter-spacing: 1px;
+		line-height: 1;
+		height: auto;
+		line-height: initial;
+		height: 50px;
+		padding: 14px 30px;
+		-webkit-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+		transition: all 0.6s ease;
+	}
+ /*----------  Responsive  ----------*/
+ 
+    @media screen and (max-width: 480px) {
+    	.sc_newsletter .slz-shortcode-send-mail {
+    		text-align: center;
+    	}
+		.sc_newsletter.has-name .slz-shortcode-send-mail .form-control {
+		    width: 100%;
+		    margin-bottom: 15px;
+		}
+		.sc_newsletter.has-name .slz-shortcode-send-mail .sc-newsletter-btn{
+			font-size: 14px;
+			text-indent: initial;
+			font-weight: 500;
+			width: auto;
+		    display: inline-block;
+		    padding: 14px 30px;
+		    border-radius: 2px;
+		    font-size: 14px;
+		    font-family: 'Poppins', sans-serif;
+		    position: relative;
+		    text-transform: uppercase;
+		}
+		.sc_newsletter.has-name .slz-shortcode-send-mail .sc-newsletter-btn:before {
+			content: none;
+		}
+		.sc_newsletter.has-name .slz-shortcode-send-mail .sc-newsletter-btn:after {
+			position: relative;
+		    content: '\f1d8';
+		    font-family: 'FontAwesome';
+		    text-indent: 0;
+		    font-size: 14px;
+		    color: #ffffff;
+		    padding-left: 10px;
+		    font-size: 12px;
+		}
+		
+    }
+ 
